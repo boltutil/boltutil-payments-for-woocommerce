@@ -20,9 +20,11 @@ WordPress 决定插件界面语言，商户自行填写的结账名称不会自�
 
 演示店可免费浏览，小额购买使用真实资金。 已在 WordPress.org 插件目录发布。
 
-[Download v0.6.1](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
+
+GitHub 安装 ZIP 包含英文及十一种翻译；WordPress.org 版使用语言包，实际可用翻译取决于已发布语言包与所选 WordPress 语言。商户自行填写的结账文案不会自动翻译。
 
 ![USDC checkout preview](../../wordpress-org-assets/screenshot-2.jpg)
 

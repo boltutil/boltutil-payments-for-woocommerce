@@ -20,9 +20,11 @@
 
 Просмотр демо бесплатен, покупки используют реальные средства. Опубликован в каталоге плагинов WordPress.org.
 
-[Download v0.6.1](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
+
+ZIP с GitHub содержит английский язык и одиннадцать переводов. Версия WordPress.org использует опубликованные языковые пакеты для выбранного языка WordPress; тексты продавца автоматически не переводятся.
 
 ![USDC checkout preview](../../wordpress-org-assets/screenshot-2.jpg)
 

@@ -24,9 +24,11 @@
 
 </div>
 
-[Download v0.6.1](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
+
+يتضمن ZIP من GitHub الإنجليزية وإحدى عشرة ترجمة. يستخدم إصدار WordPress.org حزم اللغات المنشورة وفق لغة WordPress المحددة؛ لا تُترجم نصوص التاجر المخصصة تلقائيًا.
 
 ![USDC checkout preview](../../wordpress-org-assets/screenshot-2.jpg)
 

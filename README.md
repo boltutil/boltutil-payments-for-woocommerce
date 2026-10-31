@@ -4,7 +4,9 @@
 
 ![BoltUtil — USDT and USDC payments for WooCommerce](wordpress-org-assets/banner-1544x500.png)
 
-**Accept USDT and USDC. Let customers pay their way.**
+**Accept USDT and USDC in your USD WooCommerce store.**
+
+BoltUtil Payments for WooCommerce connects USD-denominated WooCommerce stores to BoltUtil Hosted Checkout. A BoltUtil merchant account is required.
 
 Customers choose a stablecoin and an available network in WooCommerce, then continue to BoltUtil Hosted Checkout. On supported devices and networks, a connected wallet fills in the receiving address and exact amount; the customer reviews and confirms the transaction. Manual transfer remains available. Funds go directly to the merchant’s configured receiving wallet.
 
@@ -21,7 +23,7 @@ The demo shop sells small digital samples using **real funds**. Browsing is free
 - **Six networks, eleven supported combinations:** includes native USDC and explicitly labeled Bridged USDT on Base.
 - **Verified order updates:** signed Webhooks plus a merchant-scoped API status check before completing a WooCommerce order. A browser return alone does not mark it paid.
 - **Direct wallet settlement:** the plugin does not take custody or ask for wallet private keys or recovery phrases.
-- **Twelve interface languages:** English and eleven bundled translations. [Language setup and translation maintenance](docs/I18N.md).
+- **Language support:** GitHub ZIPs include English and eleven translations; WordPress.org installations use published WordPress language packs. [Language setup and translation maintenance](docs/I18N.md).
 - **Daily free allowance:** subscription plans have no daily order limit. Current allowances, benefits and fees are defined on the [BoltUtil website](https://boltutil.com/pricing).
 
 ## See the checkout
@@ -49,7 +51,7 @@ Explore the demo checkout: select USDT or USDC, choose a network and continue to
 
 ![Manual-transfer checkout preview with exact USDT amount and demonstration QR code](wordpress-org-assets/screenshot-6.jpg)
 
-These two cashier images use illustrative demo data. Wallet availability depends on network and device; the demonstration address and QR code cannot be used to transfer funds. All six screenshots use the same 1280 × 1060 presentation canvas, with interface proportions preserved.
+These two cashier images use illustrative demo data. Wallet availability depends on network and device; the demonstration address and QR code cannot be used to transfer funds. The screenshots preserve the checkout interface proportions.
 
 ## Supported tokens and networks
 
@@ -95,7 +97,7 @@ WooCommerce checkout → BoltUtil Hosted Checkout
   → WooCommerce order paid → normal WooCommerce fulfillment
 ```
 
-Event deduplication, matching payment/order/token/network/amount, signature freshness and verified API status protect order completion. Manual and scheduled status rechecks are available. Underpaid, unusual or late transfers require merchant review; returning to the shop does not prove payment. An expired attempt requires a new WooCommerce order. Base confirmation depends on L1 finality; no fixed confirmation time is promised.
+Event deduplication, matching payment/order/token/network/amount, signature freshness and verified API status protect order completion. Manual and scheduled status rechecks are available. Underpaid, unusual or late transfers require merchant review; returning to the shop does not prove payment. An expired attempt requires a new WooCommerce order. Base uses L2 confirmation by default and confirms an order after the configured requirements are met. Strict mode waits for L1 finality. Timing depends on network and service conditions; no fixed confirmation time is guaranteed.
 
 ## Release and compatibility
 
@@ -104,7 +106,7 @@ v0.6.1 is available on GitHub and installed on the public demo store. The plugin
 - Classic Checkout and WooCommerce Checkout Blocks.
 - WooCommerce High-Performance Order Storage (HPOS).
 - Six networks and eleven USDT / USDC payment routes.
-- English plus eleven bundled interface translations.
+- English plus eleven bundled translations in the GitHub ZIP; WordPress.org installations use published language packs.
 - Signed Webhooks, event deduplication and scheduled payment-status reconciliation.
 
 ## Support, development and license

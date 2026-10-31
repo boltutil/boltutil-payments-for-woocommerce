@@ -28,7 +28,7 @@ bash tools/build-release.sh
 
 Run WordPress Plugin Check on an installed build. Check classic checkout and Checkout Blocks. Changes to payment creation, signature verification, status transitions, or event deduplication also need a test showing a rejected case and a successful case. A simulated fixture does not replace a small real payment acceptance test.
 
-GitHub Actions checks the advertised PHP 7.4 floor and PHP 8.3, verifies the isolated Webhook fixtures, parses JavaScript and all PO catalogs, and inspects the installable ZIP. WordPress.org listing artwork is in `wordpress-org-assets/` and must be copied to the top-level SVN `assets/` directory only after the plugin is approved; it is not part of the installable ZIP.
+GitHub Actions checks the advertised PHP 7.4 floor and PHP 8.3, verifies the isolated Webhook fixtures, parses JavaScript and all PO catalogs, and inspects the installable ZIP. WordPress.org listing artwork is in `wordpress-org-assets/` and must be copied to the top-level SVN `assets/` directory using the approved WordPress.org release process; it is not part of the installable ZIP.
 
 ## Design boundaries
 

@@ -20,9 +20,11 @@ v0.6.1 のインストール用 ZIP を WordPress のプラグインアップロ
 
 デモの閲覧は無料ですが、少額の購入には実際の資金を使用します。 WordPress.org のプラグインディレクトリで公開済みです。
 
-[Download v0.6.1](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
+
+GitHub ZIP は英語と 11 言語の翻訳を同梱します。WordPress.org 版は選択された WordPress 言語の公開済み言語パックを使用します。加盟店が記入した文言は自動翻訳されません。
 
 ![USDC checkout preview](../../wordpress-org-assets/screenshot-2.jpg)
 

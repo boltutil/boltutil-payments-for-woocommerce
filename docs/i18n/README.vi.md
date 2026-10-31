@@ -20,9 +20,11 @@ WordPress quyết định ngôn ngữ giao diện. Nhãn do người bán tự v
 
 Xem demo miễn phí; mua sản phẩm nhỏ sử dụng tiền thật. Đã được phát hành trên thư mục plugin WordPress.org.
 
-[Download v0.6.1](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
+
+ZIP trên GitHub gồm tiếng Anh và mười một bản dịch. Bản WordPress.org dùng gói ngôn ngữ đã phát hành theo ngôn ngữ WordPress được chọn; nội dung người bán tự viết không tự động được dịch.
 
 ![USDC checkout preview](../../wordpress-org-assets/screenshot-2.jpg)
 

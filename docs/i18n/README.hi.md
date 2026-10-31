@@ -18,11 +18,13 @@ v0.6.1 का इंस्टॉल करने योग्य ZIP डाउ�
 
 इंटरफ़ेस की भाषा WordPress तय करता है। व्यापारी के अपने लिखे लेबल का स्वचालित अनुवाद नहीं होता। रोज़ाना मुफ़्त कोटा मिलता है और सब्सक्रिप्शन में दैनिक ऑर्डर सीमा नहीं है; मौजूदा सुविधाएँ और शुल्क वेबसाइट पर देखें। Checkout की सटीक राशि भेजें; नेटवर्क शुल्क अलग हैं। स्टोर पर वापस आने से भुगतान पूरा नहीं माना जाता: प्लगइन हस्ताक्षर और भुगतान की स्थिति जाँचता है।
 
-डेमो देखना मुफ़्त है, लेकिन छोटी खरीद में असली धन लगता है। प्लगइन GitHub पर उपलब्ध है और समीक्षा के लिए WordPress. WordPress.org प्लगइन डायरेक्टरी में प्रकाशित है।
+डेमो देखना मुफ़्त है, लेकिन छोटी खरीद में असली धन का उपयोग होता है। प्लगइन WordPress.org प्लगइन डायरेक्टरी में प्रकाशित है।
 
-[Download v0.6.1](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
+
+GitHub ZIP में अंग्रेज़ी और ग्यारह अनुवाद शामिल हैं। WordPress.org संस्करण चुनी गई WordPress भाषा के प्रकाशित भाषा पैक उपयोग करता है; व्यापारी के अपने लिखे पाठ का स्वतः अनुवाद नहीं होता।
 
 ![USDC checkout preview](../../wordpress-org-assets/screenshot-2.jpg)
 

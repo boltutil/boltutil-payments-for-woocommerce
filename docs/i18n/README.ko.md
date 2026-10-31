@@ -20,9 +20,11 @@ v0.6.1 설치 ZIP을 내려받아 WordPress 플러그인 업로드 화면에서 
 
 데모 탐색은 무료지만 소액 구매에는 실제 자금이 사용됩니다. WordPress.org 플러그인 디렉터리에 게시되었습니다.
 
-[Download v0.6.1](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
+
+GitHub ZIP에는 영어와 11개 번역이 포함됩니다. WordPress.org 버전은 선택한 WordPress 언어의 게시된 언어 팩을 사용하며 판매자가 작성한 문구는 자동 번역되지 않습니다.
 
 ![USDC checkout preview](../../wordpress-org-assets/screenshot-2.jpg)
 

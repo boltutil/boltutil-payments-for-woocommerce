@@ -20,9 +20,11 @@ Arayüz dili WordPress tarafından belirlenir. Satıcının özel metinleri otom
 
 Demo ücretsiz gezilebilir; küçük satın alımlar gerçek para kullanır. WordPress.org eklenti dizininde yayımlandı.
 
-[Download v0.6.1](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
+
+GitHub ZIP dosyası İngilizce ve on bir çeviri içerir. WordPress.org sürümü seçilen WordPress dilinin yayımlanmış dil paketlerini kullanır; satıcının kendi metinleri otomatik çevrilmez.
 
 ![USDC checkout preview](../../wordpress-org-assets/screenshot-2.jpg)
 

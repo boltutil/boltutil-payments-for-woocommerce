@@ -20,9 +20,11 @@ WordPress choisit la langue de l’interface. Les textes personnalisés du march
 
 La consultation de la démo est gratuite ; les petits achats utilisent des fonds réels. Publié dans le répertoire des extensions WordPress.org.
 
-[Download v0.6.1](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
+
+Le ZIP GitHub contient l’anglais et onze traductions. L’édition WordPress.org utilise les packs de langue publiés selon la langue sélectionnée ; les textes personnalisés du commerçant ne sont pas traduits automatiquement.
 
 ![USDC checkout preview](../../wordpress-org-assets/screenshot-2.jpg)
 

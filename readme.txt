@@ -51,11 +51,11 @@ Only after BoltUtil confirms payment and the plugin verifies the signed Webhook 
 
 = Can customers pay with USDC or on Base? =
 
-Native USDC on Ethereum, Polygon PoS and Solana, and Binance-Peg USDC on BNB Smart Chain (BEP20), are available only when the service activates the route and the merchant enables USDC in plugin settings. Base supports native USDC and Bridged USDT when the backend, receiving wallet and plugin settings enable the route. Base confirmation depends on L1 finality; the confirmation time varies and is not guaranteed. Planned or inactive routes are never offered.
+Native USDC on Ethereum, Polygon PoS and Solana, and Binance-Peg USDC on BNB Smart Chain (BEP20), are available only when the service activates the route and the merchant enables USDC in plugin settings. Base supports native USDC and Bridged USDT when the backend, receiving wallet and plugin settings enable the route. Base uses L2 confirmation by default and confirms an order after the configured requirements are met. Strict mode waits for L1 finality. Timing depends on network and service conditions; no fixed confirmation time is guaranteed. Planned or inactive routes are never offered.
 
 = Which languages are available? =
 
-English is the fallback. The plugin includes translations for Simplified Chinese, Spanish, Brazilian Portuguese, Russian, Vietnamese, Turkish, Japanese, Korean, Arabic, French, and Hindi. The settings interface follows the administrator's WordPress language; checkout follows the store or customer locale supplied by WordPress. Merchant-written checkout labels are not translated automatically.
+English is the fallback. The GitHub installation ZIP includes English source text and eleven bundled translations. The WordPress.org edition uses WordPress language packs; available translations depend on published packs and the selected WordPress locale. Merchant-written checkout labels are not translated automatically.
 
 = What happens when a payment needs investigation? =
 
@@ -67,7 +67,7 @@ When BoltUtil verifies an EXPIRED, FAILED, or CANCELLED payment, the plugin mark
 
 = Where can merchants get support? =
 
-Use https://github.com/changye0413/boltutil-payments-for-woocommerce/issues for plugin setup questions. WordPress.org support is available only after directory approval. For BoltUtil account, API, wallet, or payment issues, email support@boltutil.com. Do not include API keys, Webhook secrets, private keys, or recovery phrases in a support request.
+Use https://github.com/changye0413/boltutil-payments-for-woocommerce/issues for plugin setup questions. The plugin support forum is available at https://wordpress.org/support/plugin/boltutil-payments-for-woocommerce/ . For BoltUtil account, API, wallet, or payment issues, email support@boltutil.com. Do not include API keys, Webhook secrets, private keys, or recovery phrases in a support request.
 
 == Screenshots ==
 

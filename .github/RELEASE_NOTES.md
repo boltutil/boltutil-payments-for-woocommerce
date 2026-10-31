@@ -28,3 +28,14 @@ v0.6.1 支持六条链、十一种 USDT／USDC 网络组合，包括 Base 原生
 本次更新包含：免费额度与订阅文案、真实演示截图、中英文横幅、十一种翻译介绍、运行翻译更新、图标许可整理、畸形回调事件 ID 处理及更多付款回归测试。原有订单、密钥和付款核验规则保持兼容。
 
 演示店：https://shop-test.boltutil.com/ 。浏览免费，购买使用真实资金。下载 ZIP 后通过 WordPress 插件上传入口安装，使用 `SHA256SUMS.txt` 校验。插件已提交 WordPress.org，正在等待目录审核。
+
+
+## Documentation update — 2026-10-31
+
+The paragraphs above describe the original release context. The plugin is now published in the [WordPress.org Plugin Directory](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/).
+
+Base uses L2 confirmation by default and confirms an order after the configured requirements are met. Strict mode waits for L1 finality. Timing depends on network and service conditions; no fixed confirmation time is guaranteed.
+
+The GitHub installation ZIP includes English source text and eleven bundled translations. The WordPress.org edition uses WordPress language packs; available translations depend on published packs and the selected WordPress locale. Merchant-written checkout labels are not translated automatically.
+
+Existing v0.6.1 release ZIPs and checksums have not been replaced by this documentation update.
