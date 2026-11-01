@@ -4,13 +4,13 @@
 
 ![BoltUtil USDT / USDC](../../wordpress-org-assets/banner-1544x500.png)
 
-Le plugin **v0.6.1** relie WooCommerce à BoltUtil Hosted Checkout. Le client choisit une monnaie et un réseau, puis paie le montant exact affiché. Sur les appareils et réseaux compatibles, le portefeuille connecté renseigne l’adresse et le montant pour vérification et confirmation. Le transfert manuel reste disponible. Les fonds arrivent directement dans le portefeuille du marchand.
+Le plugin **v0.6.2** relie WooCommerce à BoltUtil Hosted Checkout. Le client choisit une monnaie et un réseau, puis paie le montant exact affiché. Sur les appareils et réseaux compatibles, le portefeuille connecté renseigne l’adresse et le montant pour vérification et confirmation. Le transfert manuel reste disponible. Les fonds arrivent directement dans le portefeuille du marchand.
 
 Six réseaux : TRON, Ethereum, BNB Smart Chain, Polygon, Solana et Base. USDT est disponible sur six réseaux, USDC sur cinq, soit onze combinaisons. TRON prend uniquement en charge USDT ; Base utilise Bridged USDT et le USDC de BNB est Binance-Peg USDC. Seules les routes activées par le service, les portefeuilles du marchand et le plugin sont proposées.
 
 ## Installation et configuration
 
-Téléchargez le ZIP installable v0.6.1 et importez-le depuis les extensions WordPress. Définissez la devise du magasin sur USD. Dans le même compte marchand BoltUtil, créez une LIVE API Key, configurez les portefeuilles et un Webhook actif, puis enregistrez les identifiants et réseaux dans le plugin. La mise à jour conserve commandes et identifiants ; USDC doit être activé séparément.
+Téléchargez le ZIP installable v0.6.2 et importez-le depuis les extensions WordPress. Définissez la devise du magasin sur USD. Dans le même compte marchand BoltUtil, créez une LIVE API Key, configurez les portefeuilles et un Webhook actif, puis enregistrez les identifiants et réseaux dans le plugin. La mise à jour conserve commandes et identifiants ; USDC doit être activé séparément.
 
 **WordPress 7.0+ · PHP 7.4+ · WooCommerce 11.1+ · HTTPS · USD**
 
@@ -20,7 +20,7 @@ WordPress choisit la langue de l’interface. Les textes personnalisés du march
 
 La consultation de la démo est gratuite ; les petits achats utilisent des fonds réels. Publié dans le répertoire des extensions WordPress.org.
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 

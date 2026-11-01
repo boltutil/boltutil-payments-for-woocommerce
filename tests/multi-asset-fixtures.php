@@ -85,7 +85,7 @@ check(null===$select->invoke($gateway),'USDC-only configuration rejects BEP20 US
 
 $GLOBALS['capabilities']=array('routes'=>array(array('token'=>'USDC','network'=>'BASE'),array('token'=>'USDT','network'=>'BASE')));
 $gateway->settings=array('tokens'=>array('USDT','USDC'),'networks'=>array('BASE'));
-check(array_keys($gateway->available_routes())===array('USDC:BASE','USDT:BASE'),'Base routes require server capabilities');
+check(array_keys($gateway->available_routes())===array('USDT:BASE','USDC:BASE'),'Base routes require server capabilities and use a stable token order');
 check('Bridged USDT'===BoltUtil_WC_Gateway::token_label('USDT','BASE'),'Base USDT bridge representation is explicit');
 check('USDC'===BoltUtil_WC_Gateway::token_label('USDC','BASE'),'Base USDC stays native');
 $_POST=array('boltutil_route'=>'USDC:BASE');check('BASE'===$select->invoke($gateway)['network'],'Base route accepted');
@@ -102,6 +102,23 @@ $_POST=array('boltutil_route'=>'USDT:BASE','boltutil_token'=>'USDC');
 check(null===$select->invoke($gateway),'Mismatched submitted coin and route are rejected');
 $_POST=array('boltutil_route'=>'USDC:BASE','boltutil_token'=>'USDC');
 check('USDC'===$select->invoke($gateway)['token'],'Consistent coin and network selection accepted');
+
+// Sort by the website's real IDs, not alphabetical codes or merchant checkbox order.
+$complete_capabilities=$GLOBALS['capabilities'];
+$GLOBALS['capabilities']=array('routes'=>array(
+    array('token'=>'USDC','network'=>'BASE','networkId'=>40),
+    array('token'=>'USDT','network'=>'TRC20','networkId'=>'10'),
+    array('token'=>'USDT','network'=>'BASE','networkId'=>40),
+    array('token'=>'USDT','network'=>'ERC20','networkId'=>2)
+));
+check(array_keys($gateway->available_routes())===array('USDT:ERC20','USDT:TRC20','USDT:BASE','USDC:BASE'),'Numeric network IDs determine route order and survive filtering');
+check(40===$gateway->available_routes()['USDT:BASE']['networkId'],'Website network ID is retained');
+$GLOBALS['capabilities']=array('routes'=>array(
+    array('token'=>'USDT','network'=>'BASE'),array('token'=>'USDT','network'=>'BEP20'),
+    array('token'=>'USDT','network'=>'TRC20'),array('token'=>'USDT','network'=>'ERC20')
+));
+check(array_keys($gateway->available_routes())===array('USDT:TRC20','USDT:ERC20','USDT:BEP20','USDT:BASE'),'Older servers use the original website catalog order');
+$GLOBALS['capabilities']=$complete_capabilities;
 
 // Exercise the actual create/redirect path for every route. Network calls are intercepted.
 $GLOBALS['creates']=array();$GLOBALS['reads']=array();$GLOBALS['finds']=array();

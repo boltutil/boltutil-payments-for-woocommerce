@@ -5,7 +5,7 @@ Requires at least: 7.0
 Tested up to: 7.1
 Requires PHP: 7.4
 Requires Plugins: woocommerce
-Stable tag: 0.6.1
+Stable tag: 0.6.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,6 +77,13 @@ Use https://github.com/changye0413/boltutil-payments-for-woocommerce/issues for 
 4. Public BoltUtil Studio demonstration shop with small digital products. Purchases use real funds.
 
 == Changelog ==
+
+= 0.6.2 =
+* Align checkout brand, stablecoin and network badges in Classic Checkout and Checkout Blocks, including narrow screens and RTL layouts.
+* Replace the generic Base illustration with a locally rendered blue-square identifier and keep asset provenance documented.
+* Order payment networks by BoltUtil network ID, with the original catalog order as a fallback for older services.
+* Refresh checkout styles and network artwork by content hash to avoid stale cached assets after reinstalling.
+* Preserve merchant settings, existing orders, payment amounts, signatures and verified payment-completion rules.
 
 = 0.6.1 =
 * Describe daily free allowances and unlimited daily subscription orders without hardcoding a quota; link to the current BoltUtil plans.

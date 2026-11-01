@@ -10,7 +10,7 @@ BoltUtil Payments for WooCommerce connects USD-denominated WooCommerce stores to
 
 Customers choose a stablecoin and an available network in WooCommerce, then continue to BoltUtil Hosted Checkout. On supported devices and networks, a connected wallet fills in the receiving address and exact amount; the customer reviews and confirms the transaction. Manual transfer remains available. Funds go directly to the merchant’s configured receiving wallet.
 
-**Plugin v0.6.1** integrates with BoltUtil’s multi-asset Hosted Checkout. The plugin version and BoltUtil service version are separate.
+**Plugin v0.6.2** integrates with BoltUtil’s multi-asset Hosted Checkout. The plugin version and BoltUtil service version are separate.
 
 [**Install from WordPress.org**](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [**Try the live demo**](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
 
@@ -68,7 +68,7 @@ Availability requires an enabled BoltUtil service route, the merchant’s active
 
 ## Install the plugin
 
-1. Install **BoltUtil Payments for WooCommerce** from **Plugins → Add New** in WordPress, or download [`boltutil-payments-for-woocommerce-0.6.1.zip`](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/download/v0.6.1/boltutil-payments-for-woocommerce-0.6.1.zip) from the release. Verify it against the accompanying `SHA256SUMS.txt` if needed.
+1. Install **BoltUtil Payments for WooCommerce** from **Plugins → Add New** in WordPress, or download [`boltutil-payments-for-woocommerce-0.6.2.zip`](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/download/v0.6.2/boltutil-payments-for-woocommerce-0.6.2.zip) from the release. Verify it against the accompanying `SHA256SUMS.txt` if needed.
 2. In WordPress, open **Plugins → Add New → Upload Plugin** and upload that installable ZIP. GitHub’s automatically generated source archives are not the install package.
 3. Activate the plugin and follow the configuration below. Update the existing plugin in place; do not activate an older duplicate BoltUtil gateway folder.
 
@@ -101,7 +101,7 @@ Event deduplication, matching payment/order/token/network/amount, signature fres
 
 ## Release and compatibility
 
-v0.6.1 is available on GitHub and installed on the public demo store. The plugin is published in the [WordPress.org Plugin Directory](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/).
+v0.6.2 is available on GitHub and installed on the public demo store. The plugin is published in the [WordPress.org Plugin Directory](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/).
 
 - Classic Checkout and WooCommerce Checkout Blocks.
 - WooCommerce High-Performance Order Storage (HPOS).

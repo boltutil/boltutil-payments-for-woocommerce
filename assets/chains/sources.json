@@ -9,8 +9,8 @@
   {
     "file": "assets/chains/base.svg",
     "license": "GPL-2.0-or-later",
-    "source": "BoltUtil original artwork",
-    "sha256": "0131a03379781b08cf291118b0a04ca5e0e2491f1f52fc7470cfd2b31475bbe8",
+    "source": "BoltUtil locally authored geometric blue-square SVG; shape/color reference: https://brand.base.org/core-identifiers",
+    "sha256": "0c730c2e8a8f4a7fb3c3dc1ea21feebce8160e3a970d2737f3f0e7ea1eb8bc24",
     "modified": false
   },
   {

@@ -4,13 +4,13 @@
 
 ![BoltUtil USDT / USDC](../../wordpress-org-assets/banner-1544x500.png)
 
-O plugin **v0.6.1** conecta o WooCommerce ao BoltUtil Hosted Checkout. O cliente escolhe a moeda e a rede e paga o valor exato exibido. Em dispositivos e redes compatíveis, a carteira conectada preenche o endereço e o valor para revisão e confirmação. A transferência manual também está disponível. Os fundos chegam à carteira configurada pelo lojista.
+O plugin **v0.6.2** conecta o WooCommerce ao BoltUtil Hosted Checkout. O cliente escolhe a moeda e a rede e paga o valor exato exibido. Em dispositivos e redes compatíveis, a carteira conectada preenche o endereço e o valor para revisão e confirmação. A transferência manual também está disponível. Os fundos chegam à carteira configurada pelo lojista.
 
 São seis redes: TRON, Ethereum, BNB Smart Chain, Polygon, Solana e Base. USDT em seis e USDC em cinco, totalizando onze combinações. TRON aceita apenas USDT; na Base o USDT é Bridged USDT e na BNB o USDC é Binance-Peg USDC. A disponibilidade depende do serviço, das carteiras do lojista e das opções do plugin.
 
 ## Instalação e configuração
 
-Baixe o ZIP instalável da v0.6.1 e envie-o pela página de plugins do WordPress. Defina a moeda da loja como USD. Na mesma conta de lojista BoltUtil, crie uma chave API LIVE, configure as carteiras e um Webhook ativo; salve as credenciais e as redes no plugin. A atualização preserva pedidos e credenciais; o USDC precisa ser habilitado.
+Baixe o ZIP instalável da v0.6.2 e envie-o pela página de plugins do WordPress. Defina a moeda da loja como USD. Na mesma conta de lojista BoltUtil, crie uma chave API LIVE, configure as carteiras e um Webhook ativo; salve as credenciais e as redes no plugin. A atualização preserva pedidos e credenciais; o USDC precisa ser habilitado.
 
 **WordPress 7.0+ · PHP 7.4+ · WooCommerce 11.1+ · HTTPS · USD**
 
@@ -20,7 +20,7 @@ O WordPress define o idioma da interface. Textos personalizados do lojista não 
 
 A navegação na demo é gratuita; pequenas compras usam fundos reais. Disponível no diretório de plugins do WordPress.org.
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 

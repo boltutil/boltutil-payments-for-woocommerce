@@ -21,9 +21,11 @@ Local adaptations: Solana uses a black circular backing and green-to-purple
 bars; Ethereum uses a neutral backing and dark facets. BNB Chain and Polygon
 artwork is copied unchanged from that pinned CC0 source.
 
-assets/chains/base.svg is an original generic network illustration, created
-by BoltUtil and distributed under GPLv2 or later. It is not the official
-Base logo. The adjacent Base text identifies the supported network.
+assets/chains/base.svg is a locally authored SVG document rendering the simple
+geometric blue-square identifier for Base, distributed under GPLv2 or later.
+It replaces the earlier generic network illustration. The shape/color reference
+is https://brand.base.org/core-identifiers; no third-party brand-kit file is
+bundled. The Base name and mark remain trademarks of their respective owners.
 
 Network and token names and trademarks remain with their respective owners.
 These illustrations identify available payment routes and do not imply
@@ -32,4 +34,4 @@ copyright claims, not third-party trademark rights.
 
 Exact source paths, license classifications and SHA-256 checksums for bundled
 SVGs are recorded in assets/chains/sources.json. Official Polygon, BNB Chain
-and Base brand-kit artwork from earlier releases is not included in 0.6.1.
+and Base brand-kit artwork from earlier releases is not bundled.

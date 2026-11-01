@@ -81,6 +81,17 @@ class BoltUtil_WC_Gateway extends WC_Payment_Gateway {
         return isset( $labels[ $code ] ) ? $labels[ $code ] : array( $code, $code );
     }
 
+    /** Refresh corrected artwork/styles even when a merchant reinstalls the same plugin version. */
+    public static function asset_version( $relative ) {
+        static $versions = array();
+        if ( ! isset( $versions[ $relative ] ) ) {
+            $path = dirname( __DIR__ ) . '/' . $relative;
+            $hash = is_readable( $path ) ? hash_file( 'sha256', $path ) : false;
+            $versions[ $relative ] = BOLTUTIL_WC_VERSION . ( $hash ? '-' . substr( $hash, 0, 12 ) : '' );
+        }
+        return $versions[ $relative ];
+    }
+
     public static function network_icon_url( $code ) {
         $icons = array(
             'TRC20' => 'tron.svg',
@@ -92,7 +103,7 @@ class BoltUtil_WC_Gateway extends WC_Payment_Gateway {
         );
         return isset( $icons[ $code ] )
             // A release can replace the artwork without changing its filename.
-            ? add_query_arg( 'ver', BOLTUTIL_WC_VERSION, plugins_url( 'assets/chains/' . $icons[ $code ], BOLTUTIL_WC_FILE ) ) : '';
+            ? add_query_arg( 'ver', self::asset_version( 'assets/chains/' . $icons[ $code ] ), plugins_url( 'assets/chains/' . $icons[ $code ], BOLTUTIL_WC_FILE ) ) : '';
     }
 
     /** Keep API symbols stable while distinguishing BNB Chain's mapped representation. */
@@ -261,14 +272,25 @@ class BoltUtil_WC_Gateway extends WC_Payment_Gateway {
                 set_transient( $key, $active, MINUTE_IN_SECONDS );
             }
             $routes = array();
+            // Older capabilities responses omit IDs; retain the website's original catalog order.
+            $catalog_order = array_flip( array_keys( self::NETWORKS ) );
             foreach ( $active['routes'] ?? array() as $route ) {
                 $token = $route['token'] ?? ''; $network = $route['network'] ?? '';
                 if ( ! ( 'USDC' === $token && 'TRC20' === $network ) &&
                     in_array( $token, array( 'USDT', 'USDC' ), true ) && in_array( $token, $tokens, true ) &&
                     isset( self::NETWORKS[ $network ] ) && in_array( $network, $allowed, true ) ) {
-                    $routes[ $token . ':' . $network ] = array( 'token' => $token, 'network' => $network );
+                    $network_id = filter_var( $route['networkId'] ?? null, FILTER_VALIDATE_INT, array( 'options' => array( 'min_range' => 1 ) ) );
+                    $routes[ $token . ':' . $network ] = array(
+                        'token' => $token,
+                        'network' => $network,
+                        'networkId' => false !== $network_id ? $network_id : $catalog_order[ $network ] + 1,
+                    );
                 }
             }
+            uasort( $routes, static function ( $left, $right ) {
+                $by_network = $left['networkId'] <=> $right['networkId'];
+                return $by_network ?: ( ( 'USDT' === $left['token'] ? 0 : 1 ) <=> ( 'USDT' === $right['token'] ? 0 : 1 ) );
+            } );
             return $routes;
         } catch ( Throwable $error ) { return array(); }
     }

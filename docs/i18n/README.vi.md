@@ -4,13 +4,13 @@
 
 ![BoltUtil USDT / USDC](../../wordpress-org-assets/banner-1544x500.png)
 
-Plugin **v0.6.1** kết nối WooCommerce với BoltUtil Hosted Checkout. Khách chọn đồng tiền và mạng rồi trả đúng số tiền hiển thị. Trên thiết bị và mạng được hỗ trợ, ví kết nối tự điền địa chỉ và số tiền để khách kiểm tra, xác nhận. Chuyển khoản thủ công vẫn có sẵn. Tiền đi thẳng vào ví nhận của người bán.
+Plugin **v0.6.2** kết nối WooCommerce với BoltUtil Hosted Checkout. Khách chọn đồng tiền và mạng rồi trả đúng số tiền hiển thị. Trên thiết bị và mạng được hỗ trợ, ví kết nối tự điền địa chỉ và số tiền để khách kiểm tra, xác nhận. Chuyển khoản thủ công vẫn có sẵn. Tiền đi thẳng vào ví nhận của người bán.
 
 Sáu mạng: TRON, Ethereum, BNB Smart Chain, Polygon, Solana và Base. USDT hỗ trợ sáu mạng, USDC hỗ trợ năm mạng, tổng cộng mười một tổ hợp. TRON chỉ hỗ trợ USDT; USDT trên Base là Bridged USDT và USDC trên BNB là Binance-Peg USDC. Tùy chọn chỉ hiện khi dịch vụ, ví người bán và plugin đều bật tuyến đó.
 
 ## Cài đặt và cấu hình
 
-Tải ZIP cài đặt v0.6.1 và tải lên trang plugin WordPress. Đặt tiền tệ cửa hàng là USD. Trong cùng tài khoản người bán BoltUtil, tạo LIVE API Key, cấu hình ví nhận và Webhook đang hoạt động, rồi lưu khóa và mạng trong plugin. Nâng cấp giữ nguyên đơn hàng và thông tin xác thực; cần bật USDC riêng.
+Tải ZIP cài đặt v0.6.2 và tải lên trang plugin WordPress. Đặt tiền tệ cửa hàng là USD. Trong cùng tài khoản người bán BoltUtil, tạo LIVE API Key, cấu hình ví nhận và Webhook đang hoạt động, rồi lưu khóa và mạng trong plugin. Nâng cấp giữ nguyên đơn hàng và thông tin xác thực; cần bật USDC riêng.
 
 **WordPress 7.0+ · PHP 7.4+ · WooCommerce 11.1+ · HTTPS · USD**
 
@@ -20,7 +20,7 @@ WordPress quyết định ngôn ngữ giao diện. Nhãn do người bán tự v
 
 Xem demo miễn phí; mua sản phẩm nhỏ sử dụng tiền thật. Đã được phát hành trên thư mục plugin WordPress.org.
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.1) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 

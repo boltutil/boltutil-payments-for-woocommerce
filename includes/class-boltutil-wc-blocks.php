@@ -36,6 +36,7 @@ final class BoltUtil_WC_Blocks extends \Automattic\WooCommerce\Blocks\Payments\I
                 'short' => BoltUtil_WC_Gateway::token_label( $route['token'], $code ) . ' · ' . $labels[1],
                 'token' => $route['token'],
                 'network' => $code,
+                'networkId' => $route['networkId'],
                 'tokenIcon' => BoltUtil_WC_Gateway::token_icon_url( $route['token'] ),
                 'icon' => BoltUtil_WC_Gateway::network_icon_url( $code ),
             );

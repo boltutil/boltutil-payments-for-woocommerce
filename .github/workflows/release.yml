@@ -70,11 +70,11 @@ jobs:
           if gh release view "$tag" >/dev/null 2>&1; then
             test "$(gh api "repos/$GH_REPO/git/ref/tags/$tag" --jq '.object.sha')" = "$GITHUB_SHA"
             gh release upload "$tag" "../$archive" ../SHA256SUMS.txt --clobber
-            gh release edit "$tag" --title "$tag — USDT, USDC and Base" --notes-file .github/RELEASE_NOTES.md --prerelease
+            gh release edit "$tag" --title "$tag — BoltUtil Payments for WooCommerce" --notes-file .github/RELEASE_NOTES.md --prerelease=false --latest
           else
             gh release create "$tag" "../$archive" ../SHA256SUMS.txt \
-              --target "$GITHUB_SHA" --title "$tag — USDT, USDC and Base" \
-              --notes-file .github/RELEASE_NOTES.md --prerelease
+              --target "$GITHUB_SHA" --title "$tag — BoltUtil Payments for WooCommerce" \
+              --notes-file .github/RELEASE_NOTES.md --prerelease=false --latest
           fi
           downloaded="$(mktemp -d)"
           trap 'rm -rf "$downloaded"' EXIT

@@ -3,7 +3,7 @@
  * Plugin Name: BoltUtil Payments for WooCommerce
  * Plugin URI: https://boltutil.com/woocommerce
  * Description: Accept USDT and USDC through BoltUtil hosted checkout on supported networks.
- * Version: 0.6.1
+ * Version: 0.6.2
  * Requires at least: 7.0
  * Requires Plugins: woocommerce
  * Requires PHP: 7.4
@@ -19,7 +19,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'BOLTUTIL_WC_VERSION', '0.6.1' );
+define( 'BOLTUTIL_WC_VERSION', '0.6.2' );
 define( 'BOLTUTIL_WC_FILE', __FILE__ );
 define( 'BOLTUTIL_WC_PATH', plugin_dir_path( __FILE__ ) );
 
@@ -161,7 +161,7 @@ add_action( 'plugins_loaded', function () {
     add_action( 'wp_enqueue_scripts', function () {
         if ( function_exists( 'is_checkout' ) && is_checkout() &&
             ( ! function_exists( 'is_order_received_page' ) || ! is_order_received_page() ) ) {
-            wp_enqueue_style( 'boltutil-wc-checkout', plugins_url( 'assets/checkout.css', BOLTUTIL_WC_FILE ), array(), BOLTUTIL_WC_VERSION );
+            wp_enqueue_style( 'boltutil-wc-checkout', plugins_url( 'assets/checkout.css', BOLTUTIL_WC_FILE ), array(), BoltUtil_WC_Gateway::asset_version( 'assets/checkout.css' ) );
             wp_register_script( 'boltutil-wc-routes', plugins_url( 'assets/routes.js', BOLTUTIL_WC_FILE ), array(), BOLTUTIL_WC_VERSION, true );
             wp_enqueue_script( 'boltutil-wc-checkout', plugins_url( 'assets/checkout.js', BOLTUTIL_WC_FILE ), array( 'boltutil-wc-routes' ), BOLTUTIL_WC_VERSION, true );
         }
