@@ -67,14 +67,16 @@ When BoltUtil verifies an EXPIRED, FAILED, or CANCELLED payment, the plugin mark
 
 = Where can merchants get support? =
 
-Use https://github.com/changye0413/boltutil-payments-for-woocommerce/issues for plugin setup questions. The plugin support forum is available at https://wordpress.org/support/plugin/boltutil-payments-for-woocommerce/ . For BoltUtil account, API, wallet, or payment issues, email support@boltutil.com. Do not include API keys, Webhook secrets, private keys, or recovery phrases in a support request.
+Use https://github.com/boltutil/boltutil-payments-for-woocommerce/issues for plugin setup questions. The plugin support forum is available at https://wordpress.org/support/plugin/boltutil-payments-for-woocommerce/ . For BoltUtil account, API, wallet, or payment issues, email support@boltutil.com. Do not include API keys, Webhook secrets, private keys, or recovery phrases in a support request.
 
 == Screenshots ==
 
-1. Real demo Checkout Blocks: select USDT and one of six available networks.
-2. Switch to USDC and see five eligible networks, including native USDC on Base.
+1. Actual v0.6.2 gateway renderer with sample merchant routes: USDT and six networks; surrounding checkout layout depends on the theme.
+2. Actual v0.6.2 gateway renderer with sample merchant routes: USDC and five networks, including native USDC on Base.
 3. WooCommerce merchant setup guide and daily free allowance information; no secret credential inputs are shown.
-4. Public BoltUtil Studio demonstration shop with small digital products. Purchases use real funds.
+4. Public BoltUtil Studio demonstration shop. Browsing and the interactive preview are free; submitted purchases use real funds.
+5. Interactive wallet-payment preview with Ethereum USDT and nine wallet options. Illustrative data; cannot send funds.
+6. Interactive manual-transfer preview with exact amount and a demonstration QR code. The address and QR code cannot be used to pay.
 
 == Changelog ==
 

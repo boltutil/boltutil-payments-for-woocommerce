@@ -20,7 +20,7 @@
 
 Просмотр демо бесплатен, покупки используют реальные средства. Опубликован в каталоге плагинов WordPress.org.
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ru_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ru_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ru_pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 
@@ -37,3 +37,5 @@ ZIP с GitHub содержит английский язык и одиннадц
 ![Предпросмотр ручного перевода](../../wordpress-org-assets/screenshot-6.jpg)
 
 Изображения используют демонстрационные данные. Адрес и QR-код не предназначены для оплаты. Доступность кошельков зависит от сети и устройства.
+
+Снимки проверены 2026-11-16. Выбор токена и сети локально отрисован реальным кодом v0.6.2 с примерными маршрутами; демонстрация не позволяет переводить средства.

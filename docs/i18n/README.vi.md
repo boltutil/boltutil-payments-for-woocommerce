@@ -20,7 +20,7 @@ WordPress quyết định ngôn ngữ giao diện. Nhãn do người bán tự v
 
 Xem demo miễn phí; mua sản phẩm nhỏ sử dụng tiền thật. Đã được phát hành trên thư mục plugin WordPress.org.
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=vi_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=vi_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=vi_pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 
@@ -37,3 +37,5 @@ ZIP trên GitHub gồm tiếng Anh và mười một bản dịch. Bản WordPre
 ![Xem trước chuyển thủ công](../../wordpress-org-assets/screenshot-6.jpg)
 
 Ảnh sử dụng dữ liệu minh họa. Địa chỉ và mã QR không dùng để thanh toán. Ví khả dụng tùy mạng và thiết bị.
+
+Ảnh được kiểm tra ngày 2026-11-16. Bộ chọn tiền và mạng dùng mã plugin v0.6.2 thực tế, chạy cục bộ với tuyến mẫu; bản demo không thể chuyển tiền.

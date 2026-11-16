@@ -20,7 +20,7 @@ v0.6.2 のインストール用 ZIP を WordPress のプラグインアップロ
 
 デモの閲覧は無料ですが、少額の購入には実際の資金を使用します。 WordPress.org のプラグインディレクトリで公開済みです。
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ja_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ja_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ja_pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 
@@ -37,3 +37,5 @@ GitHub ZIP は英語と 11 言語の翻訳を同梱します。WordPress.org 版
 ![手動送金のプレビュー](../../wordpress-org-assets/screenshot-6.jpg)
 
 画像はデモデータを使用しています。表示されたアドレスと QR コードで支払うことはできません。利用できるウォレットはネットワークと端末によって異なります。
+
+2026-11-16 に画像を確認。通貨・ネットワーク選択は v0.6.2 の実際のコードをサンプル経路でローカル描画しています。操作デモから送金はできません。

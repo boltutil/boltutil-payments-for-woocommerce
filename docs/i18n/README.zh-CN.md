@@ -20,7 +20,7 @@ WordPress 决定插件界面语言，商户自行填写的结账名称不会自�
 
 演示店可免费浏览，小额购买使用真实资金。 已在 WordPress.org 插件目录发布。
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=zh-CN_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=zh-CN_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=zh-CN_pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 
@@ -37,3 +37,5 @@ GitHub 安装 ZIP 包含英文及十一种翻译；WordPress.org 版使用语言
 ![手动转账收银台预览](../../wordpress-org-assets/screenshot-6.jpg)
 
 收银台图片为演示数据，地址和二维码不可用于付款。钱包可用性取决于网络与设备。
+
+截图核对于 2026-11-16。币种与网络选择图由 v0.6.2 的真实插件渲染代码在本地使用样例渠道生成；收银台图片为交互演示，不能付款。

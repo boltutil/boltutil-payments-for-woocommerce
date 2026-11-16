@@ -20,7 +20,7 @@ WordPress selecciona el idioma de la interfaz. Las etiquetas escritas por el com
 
 La demo puede explorarse gratis; las compras pequeñas usan fondos reales. Disponible en el directorio de plugins de WordPress.org.
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=es_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=es_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=es_pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 
@@ -37,3 +37,5 @@ El ZIP de GitHub incluye inglés y once traducciones. La edición de WordPress.o
 ![Vista previa de transferencia manual](../../wordpress-org-assets/screenshot-6.jpg)
 
 Las vistas del checkout usan datos de demostración. La dirección y el QR no permiten pagar. La disponibilidad de carteras depende de la red y el dispositivo.
+
+Capturas revisadas el 2026-11-16. La selección de moneda y red se renderiza localmente con el código real v0.6.2 y rutas de ejemplo; la demo de pago no permite transferir fondos.

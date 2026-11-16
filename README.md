@@ -12,7 +12,7 @@ Customers choose a stablecoin and an available network in WooCommerce, then cont
 
 **Plugin v0.6.2** integrates with BoltUtil’s multi-asset Hosted Checkout. The plugin version and BoltUtil service version are separate.
 
-[**Install from WordPress.org**](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [**Try the live demo**](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[**Install from WordPress.org**](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [**Try the live demo**](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=en_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=en_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=en_pricing)
 
 The demo shop sells small digital samples using **real funds**. Browsing is free; submitting a payment is a real transaction.
 
@@ -24,17 +24,19 @@ The demo shop sells small digital samples using **real funds**. Browsing is free
 - **Verified order updates:** signed Webhooks plus a merchant-scoped API status check before completing a WooCommerce order. A browser return alone does not mark it paid.
 - **Direct wallet settlement:** the plugin does not take custody or ask for wallet private keys or recovery phrases.
 - **Language support:** GitHub ZIPs include English and eleven translations; WordPress.org installations use published WordPress language packs. [Language setup and translation maintenance](docs/I18N.md).
-- **Daily free allowance:** subscription plans have no daily order limit. Current allowances, benefits and fees are defined on the [BoltUtil website](https://boltutil.com/pricing).
+- **Daily free allowance:** subscription plans have no daily order limit. Current allowances, benefits and fees are defined on the [BoltUtil website](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=en_pricing).
 
 ## See the checkout
 
 ### Choose a stablecoin, then a network
 
-![USDT selected in the real WooCommerce demo checkout, with six available networks](wordpress-org-assets/screenshot-1.jpg)
+![Released v0.6.2 gateway rendered locally: USDT with six sample network routes](wordpress-org-assets/screenshot-1.jpg)
 
-![USDC selected in the same checkout, with five available networks](wordpress-org-assets/screenshot-2.jpg)
+![Released v0.6.2 gateway rendered locally: USDC with five sample network routes](wordpress-org-assets/screenshot-2.jpg)
 
-Explore the demo checkout: select USDT or USDC, choose a network and continue to BoltUtil Hosted Checkout.
+Screenshots checked **2026-11-16**. The selectors and setup guide are rendered locally from the released **v0.6.2** plugin code, with synthetic merchant capabilities and no credentials. Themes can change the surrounding WooCommerce layout. [Screenshot sources](wordpress-org-assets/README.md).
+
+In a configured store, customers select USDT or USDC, choose an eligible network and continue to BoltUtil Hosted Checkout.
 
 <details>
 <summary>Merchant setup and the public demo storefront</summary>
@@ -68,19 +70,18 @@ Availability requires an enabled BoltUtil service route, the merchant’s active
 
 ## Install the plugin
 
-1. Install **BoltUtil Payments for WooCommerce** from **Plugins → Add New** in WordPress, or download [`boltutil-payments-for-woocommerce-0.6.2.zip`](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/download/v0.6.2/boltutil-payments-for-woocommerce-0.6.2.zip) from the release. Verify it against the accompanying `SHA256SUMS.txt` if needed.
-2. In WordPress, open **Plugins → Add New → Upload Plugin** and upload that installable ZIP. GitHub’s automatically generated source archives are not the install package.
-3. Activate the plugin and follow the configuration below. Update the existing plugin in place; do not activate an older duplicate BoltUtil gateway folder.
+1. **WordPress.org:** open **Plugins → Add New**, search for **BoltUtil Payments for WooCommerce**, then install and activate it. **Or use a GitHub release:** download [`boltutil-payments-for-woocommerce-0.6.2.zip`](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/download/v0.6.2/boltutil-payments-for-woocommerce-0.6.2.zip), optionally verify `SHA256SUMS.txt`, then use **Plugins → Add New → Upload Plugin**. GitHub's automatic source archives are not the install package.
+2. Follow the five configuration steps below. Update the existing plugin in place; do not activate an older duplicate BoltUtil gateway folder.
 
-**Requirements:** WordPress **7.0+**, PHP **7.4+**, WooCommerce **11.1+**, HTTPS and a WooCommerce store currency of **USD**. Automated compatibility checks cover WooCommerce 11.1, HPOS and Checkout Blocks; the public demo runs WooCommerce 11.2.0. Earlier WooCommerce versions are outside the declared support window.
+**Requirements:** WordPress **7.0+**, PHP **7.4+**, WooCommerce **11.1+**, HTTPS and a WooCommerce store currency of **USD**. The plugin header declares WooCommerce 11.1 as its tested version. Classic Checkout, Checkout Blocks and HPOS are supported. Earlier WooCommerce versions are outside the declared support window.
 
-BoltUtil is an external service. You need a LIVE `bt_live_` API key, a matching active Webhook and its `whsec_` secret, and receiving wallets configured in the same BoltUtil merchant account. Read the [service terms](https://boltutil.com/terms) and [privacy policy](https://boltutil.com/privacy).
+BoltUtil is an external service. You need a LIVE `bt_live_` API key, a matching active Webhook and its `whsec_` secret, and receiving wallets configured in the same BoltUtil merchant account. Read the [service terms](https://boltutil.com/terms?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=en_terms) and [privacy policy](https://boltutil.com/privacy?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=en_privacy).
 
 ## Configure in five steps
 
 1. Set **WooCommerce → Settings → General → Currency** to **USD**.
-2. Create a LIVE key in [BoltUtil API Keys](https://boltutil.com/dashboard/api-keys). Add and enable a receiving **address** for every intended network in [BoltUtil Wallets](https://boltutil.com/dashboard/wallets).
-3. Open **WooCommerce → Settings → Payments → BoltUtil Payments** and copy the store-specific Webhook URL. Add it in [BoltUtil Webhooks](https://boltutil.com/dashboard/webhooks) for the same merchant account as the API key; save its Webhook secret.
+2. Create a LIVE key in [BoltUtil API Keys](https://boltutil.com/dashboard/api-keys?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=en_api-keys). Add and enable a receiving **address** for every intended network in [BoltUtil Wallets](https://boltutil.com/dashboard/wallets?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=en_wallets).
+3. Open **WooCommerce → Settings → Payments → BoltUtil Payments** and copy the store-specific Webhook URL. Add it in [BoltUtil Webhooks](https://boltutil.com/dashboard/webhooks?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=en_webhooks) for the same merchant account as the API key; save its Webhook secret.
 4. Enter the LIVE API key and Webhook secret, choose allowed stablecoins and networks, enable the gateway, and save. Saved credentials are masked. Blank credential fields on a later save preserve their stored values.
 5. Check an unpaid test order and Hosted Checkout amount/address/expiry. Complete a small real payment → callback → paid order → download or fulfillment acceptance test before normal live sales.
 
@@ -101,7 +102,7 @@ Event deduplication, matching payment/order/token/network/amount, signature fres
 
 ## Release and compatibility
 
-v0.6.2 is available on GitHub and installed on the public demo store. The plugin is published in the [WordPress.org Plugin Directory](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/).
+v0.6.2 is available on GitHub and in the [WordPress.org Plugin Directory](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/), with publication status checked on **2026-11-16**. Demo-store screenshots show the public storefront and interaction preview; they do not verify the installed gateway version or payment acceptance.
 
 - Classic Checkout and WooCommerce Checkout Blocks.
 - WooCommerce High-Performance Order Storage (HPOS).
@@ -109,8 +110,16 @@ v0.6.2 is available on GitHub and installed on the public demo store. The plugin
 - English plus eleven bundled translations in the GitHub ZIP; WordPress.org installations use published language packs.
 - Signed Webhooks, event deduplication and scheduled payment-status reconciliation.
 
+## Common questions
+
+**Can I use another store currency?** This release requires a USD WooCommerce store. It uses the numeric USD order total as the stablecoin invoice basis and does not quote a live exchange rate.
+
+**Does installing the plugin make payments free?** The plugin is GPL software; BoltUtil is a separate hosted service with a daily free allowance and subscription plans. Check current pricing and network fees before going live.
+
+**Does a wallet approval or browser return complete the order?** No. The plugin verifies the signed notification and merchant-scoped payment status before marking the WooCommerce order paid. A submitted transaction can still be waiting for on-chain confirmation.
+
 ## Support, development and license
 
-Use [GitHub Issues](https://github.com/changye0413/boltutil-payments-for-woocommerce/issues) for plugin setup issues, and [support@boltutil.com](mailto:support@boltutil.com) for service/account/payment questions. Never post API keys, Webhook secrets, private keys or recovery phrases. Report vulnerabilities privately as described in [SECURITY.md](SECURITY.md).
+Use [GitHub Issues](https://github.com/boltutil/boltutil-payments-for-woocommerce/issues) for plugin setup issues, and [support@boltutil.com](mailto:support@boltutil.com) for service/account/payment questions. Never post API keys, Webhook secrets, private keys or recovery phrases. Report vulnerabilities privately as described in [SECURITY.md](SECURITY.md).
 
-See [CONTRIBUTING.md](CONTRIBUTING.md), [readme.txt](readme.txt), [translation guide](docs/I18N.md) and [release notes](.github/RELEASE_NOTES.md). Source is **GPLv2 or later**. Runtime network artwork uses documented CC0 sources and an original GPL Base illustration, not an official Base logo. [Asset provenance](ASSETS-LICENSE.txt). Brand names identify integrations and do not imply endorsement.
+See [CONTRIBUTING.md](CONTRIBUTING.md), [readme.txt](readme.txt), [translation guide](docs/I18N.md) and [release notes](.github/RELEASE_NOTES.md). Source is **GPLv2 or later**. Runtime network artwork uses documented CC0 sources and a locally rendered Base blue-square identifier; no official Base brand-kit file is bundled. [Asset provenance](ASSETS-LICENSE.txt). Brand names identify integrations and do not imply endorsement.

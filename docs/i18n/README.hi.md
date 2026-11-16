@@ -20,7 +20,7 @@ v0.6.2 का इंस्टॉल करने योग्य ZIP डाउ�
 
 डेमो देखना मुफ़्त है, लेकिन छोटी खरीद में असली धन का उपयोग होता है। प्लगइन WordPress.org प्लगइन डायरेक्टरी में प्रकाशित है।
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=hi_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=hi_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=hi_pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 
@@ -37,3 +37,5 @@ GitHub ZIP में अंग्रेज़ी और ग्यारह अ�
 ![मैनुअल ट्रांसफ़र का पूर्वावलोकन](../../wordpress-org-assets/screenshot-6.jpg)
 
 चित्र डेमो डेटा का उपयोग करते हैं। दिखाए गए पते और QR कोड से भुगतान नहीं किया जा सकता। वॉलेट की उपलब्धता नेटवर्क और डिवाइस पर निर्भर करती है।
+
+स्क्रीनशॉट 2026-11-16 को जाँचे गए। मुद्रा और नेटवर्क चयन वास्तविक v0.6.2 कोड से स्थानीय रूप से नमूना रूट के साथ रेंडर हुआ है; डेमो से धन नहीं भेजा जा सकता।

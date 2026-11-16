@@ -1,6 +1,8 @@
-# WordPress.org submission checklist
+# Historical WordPress.org submission checklist — v0.6.1
 
-This file is a WordPress.org submission gate for BoltUtil Payments for WooCommerce. The local submission candidate is **0.6.1**. It has not been published in this task. On 2026-10-12 the merchant confirmed that real-payment acceptance has not yet been completed; submission remains gated on the acceptance matrix below.
+**Current publication status, checked 2026-11-16:** v0.6.2 is available in [GitHub Releases](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) and the [WordPress.org Plugin Directory](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/). See the root README for current installation instructions.
+
+The checklist below preserves the **historical v0.6.1 preparation record**. On 2026-10-12, its candidate had not been published in that task and the merchant reported that real-payment acceptance was incomplete. Its unchecked gates and test results describe that earlier checkpoint, not the current directory status or a new acceptance test. No real-payment acceptance was performed during the 2026-11-16 documentation review.
 
 ## Completed preparation
 

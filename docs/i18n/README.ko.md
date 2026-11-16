@@ -20,7 +20,7 @@ v0.6.2 설치 ZIP을 내려받아 WordPress 플러그인 업로드 화면에서 
 
 데모 탐색은 무료지만 소액 구매에는 실제 자금이 사용됩니다. WordPress.org 플러그인 디렉터리에 게시되었습니다.
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ko_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ko_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ko_pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 
@@ -37,3 +37,5 @@ GitHub ZIP에는 영어와 11개 번역이 포함됩니다. WordPress.org 버전
 ![수동 송금 미리보기](../../wordpress-org-assets/screenshot-6.jpg)
 
 이미지는 데모 데이터를 사용합니다. 표시된 주소와 QR 코드로 결제할 수 없습니다. 사용 가능한 지갑은 네트워크와 기기에 따라 다릅니다.
+
+2026-11-16에 이미지를 확인했습니다. 통화·네트워크 선택 화면은 실제 v0.6.2 코드를 샘플 경로로 로컬에서 렌더링했습니다. 데모로 송금할 수 없습니다.

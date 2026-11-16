@@ -20,7 +20,7 @@ Arayüz dili WordPress tarafından belirlenir. Satıcının özel metinleri otom
 
 Demo ücretsiz gezilebilir; küçük satın alımlar gerçek para kullanır. WordPress.org eklenti dizininde yayımlandı.
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/changye0413/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/) · [Integration guide](https://boltutil.com/woocommerce) · [Pricing](https://boltutil.com/pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=tr_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=tr_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=tr_pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 
@@ -37,3 +37,5 @@ GitHub ZIP dosyası İngilizce ve on bir çeviri içerir. WordPress.org sürüm�
 ![Manuel transfer önizlemesi](../../wordpress-org-assets/screenshot-6.jpg)
 
 Görseller demo verileri kullanır. Adres ve QR kod ödeme için kullanılamaz. Cüzdan kullanılabilirliği ağa ve cihaza bağlıdır.
+
+Ekran görüntüleri 2026-11-16 tarihinde kontrol edildi. Para ve ağ seçimi gerçek v0.6.2 koduyla örnek rotalar kullanılarak yerel olarak oluşturuldu; demo para transferi yapmaz.
