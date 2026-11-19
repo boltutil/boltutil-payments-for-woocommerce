@@ -22,6 +22,14 @@ with zipfile.ZipFile(source) as archive:
    text,n=re.subn(r'function boltutil_wc_load_translations\(\) \{.*?\n\}\n\n','',text,flags=re.S)
    assert n==1
    data=text.encode()
+  if str(relative)=='readme.txt':
+   # Preserve the directory's search terms, feature overview and demo disclosure.
+   intro=Path(__file__).resolve().parents[1]/'wordpress-org-assets/directory-introduction.txt'
+   text=data.decode()
+   text,n=re.subn(r'(?<=\n== Description ==\n\n).*?(?=\nUSDT supports TRON)',lambda _:intro.read_text().rstrip()+'\n',text,count=1,flags=re.S)
+   assert n==1, 'Directory description insertion point changed'
+   text=re.sub(r'^Tags: .*$', 'Tags: woocommerce, usdt, usdc, crypto payments, payment gateway',text,count=1,flags=re.M)
+   data=text.encode()
   target=trunk/str(relative);target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data)
   files.append({'file':str(relative),'githubSha256':hashlib.sha256(archive.read(entry)).hexdigest(),'directorySha256':hashlib.sha256(data).hexdigest()})
 version=re.search(r'^Stable tag: (.+)$',(trunk/'readme.txt').read_text(),re.M).group(1)
