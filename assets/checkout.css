@@ -1,302 +1,51 @@
-#payment .payment_methods .payment_method_boltutil_usdt > label,
-.payment_method_boltutil_usdt > label,
-.boltutil-payment-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 750;
-}
+/* WooCommerce adapters for the generated, shared checkout-base.css. */
+.boltutil-payment-panel { width: 100%; max-width: 520px; margin: 0 auto; text-align: start; color-scheme: light; }
+.boltutil-checkout-standard .checkout-title { margin: 20px 0 0; padding: 0; color: #fff; font-family: inherit; font-size: 26px; font-weight: 750; line-height: 1.25; letter-spacing: 0; text-transform: none; }
+.boltutil-checkout-standard .brand, .boltutil-checkout-standard .brand span { font-family: inherit; letter-spacing: 0; }
+.boltutil-checkout-standard .brand-mark { color: #000; }
+.boltutil-checkout-standard p, .boltutil-checkout-standard label, .boltutil-checkout-standard fieldset { text-transform: none; letter-spacing: 0; }
+.boltutil-checkout-standard .asset-switch .boltutil-token-option { position: relative; margin: 0; line-height: 1.6; text-align: center; }
+.boltutil-checkout-standard .boltutil-token-option > input { position: absolute; width: 1px; height: 1px; margin: 0; opacity: 0; }
+.boltutil-checkout-standard .boltutil-token-fieldset { margin: 0; }
+.boltutil-checkout-standard:has(.boltutil-token-fieldset:not([hidden])) .boltutil-network-heading { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.boltutil-checkout-standard .boltutil-merchant-description { margin: 0 0 20px; color: #6b7280; font-size: 12px; line-height: 1.8; }
+.boltutil-checkout-standard .route { margin: 0; text-transform: none; }
+.boltutil-checkout-standard .route small, .boltutil-checkout-standard .route strong { font-family: inherit; }
+.boltutil-checkout-standard .boltutil-native-submit { margin: 24px 0 0; }
+.boltutil-checkout-standard .boltutil-native-submit .primary { float: none; margin: 0; text-transform: none; letter-spacing: 0; box-shadow: none; }
+.boltutil-checkout-standard .woocommerce-terms-and-conditions-wrapper { margin-bottom: 18px; color: #6b7280; font-size: 11px; line-height: 1.8; }
+.boltutil-checkout-standard .woocommerce-terms-and-conditions-wrapper p { font-size: inherit; }
 
-.woocommerce #payment .payment_methods .payment_method_boltutil_usdt > label img,
-.woocommerce #payment .payment_methods .boltutil-payment-label img,
-.wc-block-checkout .boltutil-payment-label img,
-.payment_method_boltutil_usdt > label img,
-.boltutil-payment-label img {
-    display: block;
-    flex: 0 0 30px;
-    order: -1;
-    float: none;
-    width: 30px;
-    height: 30px;
-    max-width: none;
-    max-height: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    border-radius: 8px;
-    vertical-align: middle;
-}
+/* Neutralise storefront payment-image rules while keeping the original artwork intact. */
+#payment .payment_box .boltutil-checkout-standard img,
+.boltutil-checkout-standard img { display: block; float: none; clear: none; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; border-radius: 0; box-shadow: none; object-fit: contain; }
+#payment .payment_box .boltutil-checkout-standard .route-chain img,
+.boltutil-checkout-standard .route-chain img { width: var(--boltutil-chain-image, 100%); height: var(--boltutil-chain-image, 100%); }
+.boltutil-checkout-standard .route-chain--BASE { --boltutil-chain-image: 64%; }
+.boltutil-checkout-standard .route-chain--BEP20 { --boltutil-chain-image: 74%; }
+.boltutil-checkout-standard .route-chain--POLYGON { --boltutil-chain-image: 110%; }
+.boltutil-checkout-standard .route-chain--SOLANA { --boltutil-chain-image: 130%; }
+#payment .payment_box .boltutil-checkout-standard .asset-switch img,
+.boltutil-checkout-standard .asset-switch img { width: 20px; height: 20px; border-radius: 50%; }
+#payment .payment_box .boltutil-checkout-standard .route-token img,
+.boltutil-checkout-standard .route-token img { width: 100%; height: 100%; object-fit: cover; }
+.boltutil-checkout-standard [hidden] { display: none !important; }
 
-/* WooCommerce owns the checkout layout; round only the BoltUtil payment option. */
-.wc-block-components-radio-control-accordion-option:has(.boltutil-payment-panel) {
-    border-radius: 18px;
-}
+/* Only style WooCommerce's existing submit button when BoltUtil is selected. */
+form.checkout:has(input[name="payment_method"][value="boltutil_usdt"]:checked) #place_order,
+.wc-block-checkout:has(input[value="boltutil_usdt"]:checked) .wc-block-components-checkout-place-order-button { min-height: 48px; padding: 12px 16px; border: 0; border-radius: 14px; background: #111827; color: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-size: 12px; font-weight: 600; text-transform: none; box-shadow: none; }
+.payment_method_boltutil_usdt > label, .boltutil-payment-label { display: inline-flex; align-items: center; gap: 10px; }
+.payment_method_boltutil_usdt > label img, .boltutil-payment-label img { display: block; flex: 0 0 30px; float: none; width: 30px; height: 30px; margin: 0; border-radius: 8px; }
 
-/* WooCommerce draws square side rails on the radio group around its rounded option. */
-.wc-block-components-radio-control:has(.boltutil-payment-panel)::after {
-    border-right: 0;
-    border-left: 0;
+.boltutil-invoice-page { box-sizing: border-box; padding: 24px 16px; background: #f5f5f7; }
+.boltutil-invoice-page #order_review { max-width: 520px; margin: 0 auto; padding: 0; border: 0; background: transparent; box-shadow: none; }
+.boltutil-order-details { max-width: 520px; margin: 18px auto 0; color: #6b7280; font: 11px/1.8 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+.boltutil-order-details summary { min-height: 44px; padding: 10px 16px; text-align: center; cursor: pointer; }
+.boltutil-order-details table { margin-top: 12px; background: #fff; font: inherit; }
+.boltutil-order-details th, .boltutil-order-details td { padding: 12px; overflow-wrap: anywhere; }
+@media(max-width:639px) {
+    /* Reclaim the storefront's outer gutters only for the dedicated invoice surface. */
+    .boltutil-invoice-page { width: 100vw; max-width: none; margin-inline: calc(50% - 50vw); padding: 16px 12px; }
+    .boltutil-checkout-standard .checkout-title { font-size: 23px; }
 }
-
-.wc-block-components-radio-control-accordion-option:has(.boltutil-payment-panel)::after {
-    border-radius: 18px;
-}
-
-.payment_method_boltutil_usdt,
-.payment_method_boltutil_usdt .payment_box {
-    border-radius: 18px;
-}
-
-.boltutil-payment-panel {
-    display: grid;
-    gap: 18px;
-    max-width: 760px;
-    padding: 18px 0 2px;
-    color: #161616;
-}
-
-/* Theme payment-image rules must not float or offset our nested badges. */
-#payment .payment_box .boltutil-payment-panel .boltutil-network-art img,
-#payment .payment_box .boltutil-payment-panel .boltutil-token-option img,
-.boltutil-payment-panel img {
-    display: block;
-    float: none;
-    clear: none;
-    max-width: none;
-    max-height: none;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-shadow: none;
-    object-fit: contain;
-}
-
-.boltutil-payment-panel .boltutil-payment-description,
-.boltutil-payment-panel .boltutil-payment-note {
-    margin: 0;
-    line-height: 1.55;
-}
-
-.boltutil-network-fieldset {
-    min-width: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-.boltutil-network-fieldset legend {
-    display: block;
-    width: 100%;
-    margin-bottom: 12px;
-    padding: 0;
-    color: #111;
-    font-size: 15px;
-    font-weight: 800;
-    letter-spacing: .01em;
-}
-
-.boltutil-network-list {
-    display: grid;
-    gap: 10px;
-}
-
-.boltutil-payment-panel .boltutil-network-option {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: 78px;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 14px 20px;
-    border: 1px solid #d8e0eb;
-    border-radius: 17px;
-    background: #f8fafc;
-    color: #172033;
-    cursor: pointer;
-    text-align: start;
-    transition: border-color .18s, background .18s, box-shadow .18s, transform .18s;
-}
-
-.boltutil-payment-panel .boltutil-network-option:hover {
-    transform: translateY(-1px);
-    border-color: #93b4e9;
-    background: #f0f5ff;
-}
-
-.boltutil-payment-panel .boltutil-network-option:has(input:checked) {
-    border-color: #2563eb;
-    background: #eaf2ff;
-    box-shadow: 0 0 0 2px rgba(37, 99, 235, .13), inset 4px 0 0 #2563eb;
-}
-
-.boltutil-payment-panel .boltutil-network-option:has(input:checked):hover {
-    background: #e0edff;
-}
-
-.boltutil-payment-panel .boltutil-network-option:has(input:focus-visible) {
-    outline: 3px solid #1d4ed8;
-    outline-offset: 3px;
-}
-
-.boltutil-network-option input[type="radio"] {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    opacity: 0;
-}
-
-.boltutil-network-art {
-    position: relative;
-    display: inline-flex;
-    flex: 0 0 62px;
-    width: 62px;
-    align-items: center;
-    align-self: center;
-    height: 46px;
-    margin-inline-end: 16px;
-    line-height: 0;
-}
-
-.boltutil-chain-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex: 0 0 46px;
-    width: 46px;
-    height: 46px;
-    box-sizing: border-box;
-    border: 1px solid #e5e7eb;
-    border-radius: 50%;
-    overflow: hidden;
-    background: #fff;
-}
-
-#payment .payment_box .boltutil-payment-panel .boltutil-chain-badge img,
-#payment .payment_box .boltutil-payment-panel .boltutil-token-badge img,
-.boltutil-chain-badge img,
-.boltutil-token-badge img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: contain;
-}
-
-.boltutil-token-badge {
-    position: absolute;
-    inset-inline-end: 0;
-    bottom: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    box-sizing: border-box;
-    border: 2px solid #f8fafc;
-    border-radius: 50%;
-    overflow: hidden;
-    background: #fff;
-}
-
-/* Keep official paths, colors and corners intact; clear space belongs to the UI. */
-.boltutil-chain-badge.network-base {
-    background: #fff;
-}
-#payment .payment_box .boltutil-payment-panel .boltutil-chain-badge.network-base img,
-.boltutil-chain-badge.network-base img {
-    width: 50%;
-    height: 50%;
-    border-radius: 0;
-}
-.boltutil-chain-badge.network-bep20,
-.boltutil-chain-badge.network-polygon,
-.boltutil-chain-badge.network-solana {
-    border: 0;
-}
-
-.boltutil-network-copy {
-    display: grid;
-    gap: 2px;
-    min-width: 0;
-}
-
-.boltutil-network-copy strong {
-    color: #172033;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 1.25;
-}
-
-.boltutil-network-copy small {
-    color: #64748b;
-    font-size: 11px;
-    font-weight: 750;
-    letter-spacing: .15em;
-    line-height: 1.45;
-    overflow-wrap: anywhere;
-}
-
-.boltutil-network-arrow {
-    margin-inline-start: auto;
-    padding-inline-start: 10px;
-    color: #475569;
-    font-size: 25px;
-    line-height: 1;
-}
-
-.boltutil-network-selected {
-    display: none;
-    flex: 0 0 auto;
-    align-items: center;
-    gap: 5px;
-    margin-inline-start: auto;
-    padding: 6px 10px;
-    border-radius: 999px;
-    background: #dbeafe;
-    color: #12336b;
-    font-size: 12px;
-    font-weight: 800;
-    white-space: nowrap;
-}
-
-.boltutil-network-option:has(input:checked) .boltutil-network-arrow {
-    display: none;
-}
-
-.boltutil-network-option:has(input:checked) .boltutil-network-selected {
-    display: inline-flex;
-}
-
-.boltutil-payment-panel .boltutil-payment-note {
-    padding: 13px 16px;
-    border-left: 3px solid #2a5ce3;
-    border-radius: 10px;
-    background: #f1f5ff;
-    color: #34445f;
-    font-size: 13px;
-}
-
-@media (max-width: 600px) {
-    .boltutil-payment-panel .boltutil-network-option {
-        min-height: 70px;
-        padding: 12px 14px;
-    }
-    .boltutil-network-copy strong { font-size: 14px; }
-    .boltutil-network-art { margin-inline-end: 10px; }
-    .boltutil-network-selected { padding: 5px 7px; font-size: 11px; }
-}
-
-/* Coin selection is separate from network selection in both checkout modes. */
-.boltutil-token-fieldset { min-width:0; margin:0; padding:0; border:0; }
-.boltutil-token-fieldset legend { margin-bottom:12px; color:#111; font-size:15px; font-weight:800; }
-.boltutil-token-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
-.boltutil-payment-panel .boltutil-token-option { display:flex; align-items:center; gap:12px; margin:0; padding:14px 18px; border:1px solid #d8e0eb; border-radius:14px; background:#f8fafc; color:#172033; cursor:pointer; }
-#payment .payment_box .boltutil-payment-panel .boltutil-token-option img,
-.boltutil-payment-panel .boltutil-token-option img { display:block; flex:0 0 30px; width:30px; height:30px; border-radius:50%; }
-.boltutil-token-option input { position:absolute; opacity:0; width:1px; height:1px; }
-.boltutil-token-option:has(input:checked) { border-color:#2563eb; background:#eaf2ff; box-shadow:0 0 0 2px rgba(37,99,235,.13); }
-.boltutil-token-option:has(input:focus-visible) { outline:3px solid #1d4ed8; outline-offset:3px; }
-.boltutil-payment-panel .boltutil-network-option[hidden], .boltutil-token-fieldset[hidden] { display:none !important; }
-.boltutil-chain-badge.network-solana { background:#000; border:0; }
-.boltutil-chain-badge.network-trc20, .boltutil-chain-badge.network-erc20 { background:#fff; border-color:#e5e7eb; }
-@media (prefers-reduced-motion:reduce) { .boltutil-network-option { transition:none !important; } }
+@media(forced-colors:active) { .boltutil-checkout-standard .boltutil-token-option > input { position: static; width: 16px; height: 16px; opacity: 1; } }

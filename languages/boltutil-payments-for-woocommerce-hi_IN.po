@@ -513,3 +513,39 @@ msgstr "भुगतान नेटवर्क चुनें"
 #~ msgstr ""
 #~ "केवल लाइव भुगतान। एक सक्षम BoltUtil भुगतान एपीआई और सक्रिय निपटान वॉलेट की "
 #~ "आवश्यकता है।"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Stablecoin invoice payments"
+msgstr "स्टेबलकॉइन से इनवॉइस भुगतान"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay your invoice"
+msgstr "अपना इनवॉइस चुकाएँ"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Amount to pay"
+msgstr "भुगतान की राशि"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Order"
+msgstr "ऑर्डर"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Choose an asset and network"
+msgstr "एसेट और नेटवर्क चुनें"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Continue to BoltUtil"
+msgstr "BoltUtil पर जाएँ"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Back to store"
+msgstr "स्टोर पर वापस जाएँ"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay the exact amount on the hosted checkout, using its selected network. Confirmation is automatic after verification. Opening or returning to this page does not mark an order paid."
+msgstr "चुने गए नेटवर्क का उपयोग करके भुगतान पृष्ठ पर दिखाई गई सटीक राशि चुकाएँ। सत्यापन के बाद पुष्टि अपने-आप होती है। यह पृष्ठ खोलने या इस पर वापस आने से ऑर्डर भुगतान किया हुआ नहीं माना जाता।"
+
+#: includes/templates/form-pay.php
+msgid "Order details"
+msgstr "ऑर्डर का विवरण"

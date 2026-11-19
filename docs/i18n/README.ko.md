@@ -4,13 +4,13 @@
 
 ![BoltUtil USDT / USDC](../../wordpress-org-assets/banner-1544x500.png)
 
-플러그인 **v0.6.2**은 WooCommerce를 BoltUtil Hosted Checkout에 연결합니다. 구매자는 코인과 네트워크를 선택하고 표시된 정확한 금액을 결제합니다. 지원되는 기기와 네트워크에서는 연결된 지갑에 주소와 금액이 자동 입력되며, 내용을 확인한 뒤 승인합니다. 수동 송금도 가능합니다. 자금은 판매자가 설정한 수신 지갑으로 직접 전달됩니다.
+플러그인 **v0.6.3**은 WooCommerce를 BoltUtil Hosted Checkout에 연결합니다. 구매자는 코인과 네트워크를 선택하고 표시된 정확한 금액을 결제합니다. 지원되는 기기와 네트워크에서는 연결된 지갑에 주소와 금액이 자동 입력되며, 내용을 확인한 뒤 승인합니다. 수동 송금도 가능합니다. 자금은 판매자가 설정한 수신 지갑으로 직접 전달됩니다.
 
 TRON, Ethereum, BNB Smart Chain, Polygon, Solana, Base 등 6개 네트워크를 지원합니다. USDT는 6개, USDC는 5개 네트워크로 총 11개 조합입니다. TRON은 USDT만 지원합니다. Base의 USDT는 Bridged USDT, BNB의 USDC는 Binance-Peg USDC입니다. 서비스, 판매자 지갑 및 플러그인에서 활성화된 조합만 표시됩니다.
 
 ## 설치 및 설정
 
-v0.6.2 설치 ZIP을 내려받아 WordPress 플러그인 업로드 화면에서 설치합니다. 상점 통화를 USD로 설정하고 동일한 BoltUtil 판매자 계정에 LIVE API Key, 수신 지갑, 활성 Webhook을 구성한 뒤 저장합니다. 업데이트는 기존 주문과 인증 정보를 유지하며 USDC는 별도로 활성화해야 합니다.
+v0.6.3 설치 ZIP을 내려받아 WordPress 플러그인 업로드 화면에서 설치합니다. 상점 통화를 USD로 설정하고 동일한 BoltUtil 판매자 계정에 LIVE API Key, 수신 지갑, 활성 Webhook을 구성한 뒤 저장합니다. 업데이트는 기존 주문과 인증 정보를 유지하며 USDC는 별도로 활성화해야 합니다.
 
 **WordPress 7.0+ · PHP 7.4+ · WooCommerce 11.1+ · HTTPS · USD**
 
@@ -20,7 +20,7 @@ v0.6.2 설치 ZIP을 내려받아 WordPress 플러그인 업로드 화면에서 
 
 데모 탐색은 무료지만 소액 구매에는 실제 자금이 사용됩니다. WordPress.org 플러그인 디렉터리에 게시되었습니다.
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ko_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ko_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ko_pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.3) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ko_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ko_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ko_pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 
@@ -30,12 +30,10 @@ GitHub ZIP에는 영어와 11개 번역이 포함됩니다. WordPress.org 버전
 
 [WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/)
 
-## 지갑 결제 및 수동 송금
+## WooCommerce v0.6.3
 
-![지갑 결제 미리보기](../../wordpress-org-assets/screenshot-5.jpg)
+![Classic Checkout — USDC / Base](../../wordpress-org-assets/screenshot-5.jpg)
 
-![수동 송금 미리보기](../../wordpress-org-assets/screenshot-6.jpg)
+![Mobile invoice — USDC](../../wordpress-org-assets/screenshot-6.jpg)
 
-이미지는 데모 데이터를 사용합니다. 표시된 주소와 QR 코드로 결제할 수 없습니다. 사용 가능한 지갑은 네트워크와 기기에 따라 다릅니다.
-
-2026-11-16에 이미지를 확인했습니다. 통화·네트워크 선택 화면은 실제 v0.6.2 코드를 샘플 경로로 로컬에서 렌더링했습니다. 데모로 송금할 수 없습니다.
+Screenshots: 2026-11-19, local WordPress + WooCommerce 11.1.0 + plugin v0.6.3. Synthetic orders and merchant capabilities; no production payment or blockchain transfer. Store themes control the surrounding layout.

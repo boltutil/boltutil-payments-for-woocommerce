@@ -516,3 +516,39 @@ msgstr "Chọn mạng thanh toán"
 #~ msgstr ""
 #~ "Chỉ thanh toán TRỰC TIẾP. Yêu cầu API thanh toán BoltUtil được kích hoạt và "
 #~ "ví thanh toán đang hoạt động."
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Stablecoin invoice payments"
+msgstr "Thanh toán hóa đơn bằng stablecoin"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay your invoice"
+msgstr "Thanh toán hóa đơn"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Amount to pay"
+msgstr "Số tiền cần trả"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Order"
+msgstr "Đơn hàng"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Choose an asset and network"
+msgstr "Chọn tài sản và mạng"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Continue to BoltUtil"
+msgstr "Tiếp tục đến BoltUtil"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Back to store"
+msgstr "Quay lại cửa hàng"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay the exact amount on the hosted checkout, using its selected network. Confirmation is automatic after verification. Opening or returning to this page does not mark an order paid."
+msgstr "Thanh toán đúng số tiền trên trang thanh toán bằng mạng đã chọn. Thanh toán được xác nhận tự động sau khi xác minh. Mở hoặc quay lại trang này không đánh dấu đơn hàng là đã thanh toán."
+
+#: includes/templates/form-pay.php
+msgid "Order details"
+msgstr "Chi tiết đơn hàng"

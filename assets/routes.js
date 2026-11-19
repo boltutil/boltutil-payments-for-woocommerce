@@ -5,8 +5,12 @@
     const forToken = ( routes, token ) => Object.keys( routes ).filter( ( id ) => routes[ id ].token === token );
     const select = ( routes, token, previous ) => {
         const eligible = forToken( routes, token );
-        const previousNetwork = routes[ previous ] && routes[ previous ].network;
-        return eligible.find( ( id ) => routes[ id ].network === previousNetwork ) || eligible[ 0 ] || '';
+        return eligible.includes( previous ) ? previous : '';
     };
-    window.BoltUtilCheckoutRoutes = { tokens, forToken, select };
+    const amount = ( minor, digits = 2 ) => {
+        if ( ! Number.isInteger( digits ) || digits < 0 || digits > 6 || ! /^[0-9]{1,19}$/.test( String( minor ) ) ) return '';
+        const value = String( minor ).replace( /^0+(?=\d)/, '' ).padStart( digits + 1, '0' );
+        return digits ? value.slice( 0, -digits ) + '.' + value.slice( -digits ) : value;
+    };
+    window.BoltUtilCheckoutRoutes = { tokens, forToken, select, amount };
 } )();

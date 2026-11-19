@@ -486,3 +486,39 @@ msgstr "決済ネットワークを選択"
 #~ "LIVE payments only. Requires an enabled BoltUtil Payment API and active "
 #~ "settlement wallets."
 #~ msgstr "LIVE支払いのみ。有効な BoltUtil Payment API とアクティブな決済ウォレットが必要です。"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Stablecoin invoice payments"
+msgstr "ステーブルコインで請求書を支払う"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay your invoice"
+msgstr "請求書のお支払い"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Amount to pay"
+msgstr "お支払い金額"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Order"
+msgstr "注文"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Choose an asset and network"
+msgstr "通貨とネットワークを選択"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Continue to BoltUtil"
+msgstr "BoltUtil に進む"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Back to store"
+msgstr "ストアに戻る"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay the exact amount on the hosted checkout, using its selected network. Confirmation is automatic after verification. Opening or returning to this page does not mark an order paid."
+msgstr "選択されたネットワークを使用し、決済画面に表示された正確な金額をお支払いください。検証後に自動で確認されます。このページを開く、または戻るだけでは注文は支払済みになりません。"
+
+#: includes/templates/form-pay.php
+msgid "Order details"
+msgstr "注文の詳細"

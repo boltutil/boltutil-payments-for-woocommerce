@@ -10,7 +10,7 @@ BoltUtil Payments for WooCommerce connects USD-denominated WooCommerce stores to
 
 Customers choose a stablecoin and an available network in WooCommerce, then continue to BoltUtil Hosted Checkout. On supported devices and networks, a connected wallet fills in the receiving address and exact amount; the customer reviews and confirms the transaction. Manual transfer remains available. Funds go directly to the merchant’s configured receiving wallet.
 
-**Plugin v0.6.2** integrates with BoltUtil’s multi-asset Hosted Checkout. The plugin version and BoltUtil service version are separate.
+**Plugin v0.6.3** integrates with BoltUtil’s multi-asset Hosted Checkout. The plugin version and BoltUtil service version are separate.
 
 [**Install from WordPress.org**](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [**Try the live demo**](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=en_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=en_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=en_pricing)
 
@@ -18,7 +18,7 @@ The demo shop sells small digital samples using **real funds**. Browsing is free
 
 ## Why BoltUtil
 
-- **Two-step checkout:** choose USDT or USDC, then an eligible network. Works with classic checkout and Checkout Blocks.
+- **Consistent checkout:** matching BoltUtil invoice, Classic Checkout and Checkout Blocks cards, with USDT/USDC tabs and explicit network selection. Changing the asset clears the previous network choice.
 - **Wallet confirmation or manual transfer:** payment methods are provided by BoltUtil Hosted Checkout. Quick-payment availability depends on the token, network, device and installed wallet.
 - **Six networks, eleven supported combinations:** includes native USDC and explicitly labeled Bridged USDT on Base.
 - **Verified order updates:** signed Webhooks plus a merchant-scoped API status check before completing a WooCommerce order. A browser return alone does not mark it paid.
@@ -28,32 +28,28 @@ The demo shop sells small digital samples using **real funds**. Browsing is free
 
 ## See the checkout
 
-### Choose a stablecoin, then a network
+The v0.6.3 payment cards share BoltUtil Hosted Checkout's layout, typography, controls and original network/token artwork.
 
-![Released v0.6.2 gateway rendered locally: USDT with six sample network routes](wordpress-org-assets/screenshot-1.jpg)
+![WooCommerce order-payment page: USDT and six enabled networks](wordpress-org-assets/screenshot-1.jpg)
 
-![Released v0.6.2 gateway rendered locally: USDC with five sample network routes](wordpress-org-assets/screenshot-2.jpg)
+![WooCommerce order-payment page: USDC and five enabled networks](wordpress-org-assets/screenshot-2.jpg)
 
-Screenshots checked **2026-11-16**. The selectors and setup guide are rendered locally from the released **v0.6.2** plugin code, with synthetic merchant capabilities and no credentials. Themes can change the surrounding WooCommerce layout. [Screenshot sources](wordpress-org-assets/README.md).
-
-In a configured store, customers select USDT or USDC, choose an eligible network and continue to BoltUtil Hosted Checkout.
+Captured **2026-11-19** from a local WordPress installation running WooCommerce 11.1.0 and the v0.6.3 plugin. All products, invoices and merchant capabilities are synthetic; no production payment request or blockchain transfer was made. Store themes control the surrounding page. [Screenshot details](wordpress-org-assets/README.md).
 
 <details>
-<summary>Merchant setup and the public demo storefront</summary>
+<summary>Setup, Checkout Blocks, classic checkout and mobile invoice</summary>
 
-![BoltUtil merchant setup guide in WooCommerce, with no secret credential fields shown](wordpress-org-assets/screenshot-3.jpg)
+![Merchant setup guide without credential fields](wordpress-org-assets/screenshot-3.jpg)
 
-![BoltUtil Studio public WooCommerce demo storefront](wordpress-org-assets/screenshot-4.jpg)
+![WooCommerce Checkout Blocks with USDC selected](wordpress-org-assets/screenshot-4.jpg)
+
+![Classic checkout preserving the selected USDC Base route](wordpress-org-assets/screenshot-5.jpg)
+
+![Mobile invoice using the same BoltUtil payment-card standard](wordpress-org-assets/screenshot-6.jpg)
 
 </details>
 
-### Wallet payment and manual transfer
-
-![Ethereum USDT wallet-payment preview with nine wallet options](wordpress-org-assets/screenshot-5.jpg)
-
-![Manual-transfer checkout preview with exact USDT amount and demonstration QR code](wordpress-org-assets/screenshot-6.jpg)
-
-These two cashier images use illustrative demo data. Wallet availability depends on network and device; the demonstration address and QR code cannot be used to transfer funds. The screenshots preserve the checkout interface proportions.
+Native WooCommerce billing, terms, order permissions and payment verification are preserved. When another payment method is available, customers retain WooCommerce's payment-method selection.
 
 ## Supported tokens and networks
 
@@ -70,7 +66,7 @@ Availability requires an enabled BoltUtil service route, the merchant’s active
 
 ## Install the plugin
 
-1. **WordPress.org:** open **Plugins → Add New**, search for **BoltUtil Payments for WooCommerce**, then install and activate it. **Or use a GitHub release:** download [`boltutil-payments-for-woocommerce-0.6.2.zip`](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/download/v0.6.2/boltutil-payments-for-woocommerce-0.6.2.zip), optionally verify `SHA256SUMS.txt`, then use **Plugins → Add New → Upload Plugin**. GitHub's automatic source archives are not the install package.
+1. **WordPress.org:** open **Plugins → Add New**, search for **BoltUtil Payments for WooCommerce**, then install and activate it. **Or use a GitHub release:** download [`boltutil-payments-for-woocommerce-0.6.3.zip`](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/download/v0.6.3/boltutil-payments-for-woocommerce-0.6.3.zip), optionally verify `SHA256SUMS.txt`, then use **Plugins → Add New → Upload Plugin**. GitHub's automatic source archives are not the install package.
 2. Follow the five configuration steps below. Update the existing plugin in place; do not activate an older duplicate BoltUtil gateway folder.
 
 **Requirements:** WordPress **7.0+**, PHP **7.4+**, WooCommerce **11.1+**, HTTPS and a WooCommerce store currency of **USD**. The plugin header declares WooCommerce 11.1 as its tested version. Classic Checkout, Checkout Blocks and HPOS are supported. Earlier WooCommerce versions are outside the declared support window.
@@ -102,7 +98,7 @@ Event deduplication, matching payment/order/token/network/amount, signature fres
 
 ## Release and compatibility
 
-v0.6.2 is available on GitHub and in the [WordPress.org Plugin Directory](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/), with publication status checked on **2026-11-16**. Demo-store screenshots show the public storefront and interaction preview; they do not verify the installed gateway version or payment acceptance.
+The repository contains v0.6.3. GitHub Releases provides the installable ZIP; the [WordPress.org directory](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) provides its own language-pack edition. Check the directory version before installing. The public demo is maintained separately and is not proof that a particular plugin version is deployed.
 
 - Classic Checkout and WooCommerce Checkout Blocks.
 - WooCommerce High-Performance Order Storage (HPOS).
@@ -122,4 +118,4 @@ v0.6.2 is available on GitHub and in the [WordPress.org Plugin Directory](https:
 
 Use [GitHub Issues](https://github.com/boltutil/boltutil-payments-for-woocommerce/issues) for plugin setup issues, and [support@boltutil.com](mailto:support@boltutil.com) for service/account/payment questions. Never post API keys, Webhook secrets, private keys or recovery phrases. Report vulnerabilities privately as described in [SECURITY.md](SECURITY.md).
 
-See [CONTRIBUTING.md](CONTRIBUTING.md), [readme.txt](readme.txt), [translation guide](docs/I18N.md) and [release notes](.github/RELEASE_NOTES.md). Source is **GPLv2 or later**. Runtime network artwork uses documented CC0 sources and a locally rendered Base blue-square identifier; no official Base brand-kit file is bundled. [Asset provenance](ASSETS-LICENSE.txt). Brand names identify integrations and do not imply endorsement.
+See [CONTRIBUTING.md](CONTRIBUTING.md), [readme.txt](readme.txt), [translation guide](docs/I18N.md) and [release notes](.github/RELEASE_NOTES.md). Source is **GPLv2 or later**. See [LICENSE](LICENSE) and [asset licence notice](ASSETS-LICENSE.txt). Brand names identify supported integrations and do not imply endorsement.

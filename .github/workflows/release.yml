@@ -32,11 +32,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          for file in boltutil-woocommerce.php includes/*.php tests/*.php; do php -l "$file"; done
+          for file in boltutil-woocommerce.php includes/*.php includes/templates/*.php tests/*.php; do php -l "$file"; done
           php tests/webhook-fixtures.php
           php tests/reconcile-schedule-fixtures.php
           php tests/multi-asset-fixtures.php
           php tests/api-fixtures.php
+          php tests/checkout-view-fixtures.php
           node tests/checkout-routes.cjs
       - name: Check version and package
         id: package

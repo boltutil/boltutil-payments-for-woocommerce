@@ -505,3 +505,39 @@ msgstr "اختر شبكة الدفع"
 #~ msgstr ""
 #~ "المدفوعات المباشرة فقط. يتطلب واجهة برمجة تطبيقات الدفع BoltUtil ومحافظ "
 #~ "التسوية النشطة."
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Stablecoin invoice payments"
+msgstr "دفع الفواتير بالعملات المستقرة"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay your invoice"
+msgstr "ادفع فاتورتك"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Amount to pay"
+msgstr "المبلغ المطلوب"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Order"
+msgstr "الطلب"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Choose an asset and network"
+msgstr "اختر العملة والشبكة"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Continue to BoltUtil"
+msgstr "المتابعة إلى BoltUtil"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Back to store"
+msgstr "العودة إلى المتجر"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay the exact amount on the hosted checkout, using its selected network. Confirmation is automatic after verification. Opening or returning to this page does not mark an order paid."
+msgstr "ادفع المبلغ المحدد في صفحة الدفع باستخدام الشبكة المختارة. يتم التأكيد تلقائيًا بعد التحقق. فتح هذه الصفحة أو العودة إليها لا يجعل الطلب مدفوعًا."
+
+#: includes/templates/form-pay.php
+msgid "Order details"
+msgstr "تفاصيل الطلب"

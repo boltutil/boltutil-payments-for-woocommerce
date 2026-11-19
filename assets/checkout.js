@@ -26,7 +26,7 @@
         const token = lastChoice && model.tokens( routes ).includes( lastChoice.token )
             ? lastChoice.token : coins[ 0 ].value;
         selectCoin( token, lastChoice && lastChoice.route );
-        panel.querySelector( '.boltutil-token-fieldset' ).hidden = false;
+        panel.querySelector( '.boltutil-token-fieldset' ).hidden = coins.length < 2;
         panel.addEventListener( 'change', ( event ) => {
             if ( event.target.name === 'boltutil_token' ) selectCoin( event.target.value, lastChoice && lastChoice.route );
             if ( event.target.name === 'boltutil_route' && routes[ event.target.value ] ) {

@@ -4,13 +4,13 @@
 
 ![BoltUtil USDT / USDC](../../wordpress-org-assets/banner-1544x500.png)
 
-Plugin **v0.6.2** kết nối WooCommerce với BoltUtil Hosted Checkout. Khách chọn đồng tiền và mạng rồi trả đúng số tiền hiển thị. Trên thiết bị và mạng được hỗ trợ, ví kết nối tự điền địa chỉ và số tiền để khách kiểm tra, xác nhận. Chuyển khoản thủ công vẫn có sẵn. Tiền đi thẳng vào ví nhận của người bán.
+Plugin **v0.6.3** kết nối WooCommerce với BoltUtil Hosted Checkout. Khách chọn đồng tiền và mạng rồi trả đúng số tiền hiển thị. Trên thiết bị và mạng được hỗ trợ, ví kết nối tự điền địa chỉ và số tiền để khách kiểm tra, xác nhận. Chuyển khoản thủ công vẫn có sẵn. Tiền đi thẳng vào ví nhận của người bán.
 
 Sáu mạng: TRON, Ethereum, BNB Smart Chain, Polygon, Solana và Base. USDT hỗ trợ sáu mạng, USDC hỗ trợ năm mạng, tổng cộng mười một tổ hợp. TRON chỉ hỗ trợ USDT; USDT trên Base là Bridged USDT và USDC trên BNB là Binance-Peg USDC. Tùy chọn chỉ hiện khi dịch vụ, ví người bán và plugin đều bật tuyến đó.
 
 ## Cài đặt và cấu hình
 
-Tải ZIP cài đặt v0.6.2 và tải lên trang plugin WordPress. Đặt tiền tệ cửa hàng là USD. Trong cùng tài khoản người bán BoltUtil, tạo LIVE API Key, cấu hình ví nhận và Webhook đang hoạt động, rồi lưu khóa và mạng trong plugin. Nâng cấp giữ nguyên đơn hàng và thông tin xác thực; cần bật USDC riêng.
+Tải ZIP cài đặt v0.6.3 và tải lên trang plugin WordPress. Đặt tiền tệ cửa hàng là USD. Trong cùng tài khoản người bán BoltUtil, tạo LIVE API Key, cấu hình ví nhận và Webhook đang hoạt động, rồi lưu khóa và mạng trong plugin. Nâng cấp giữ nguyên đơn hàng và thông tin xác thực; cần bật USDC riêng.
 
 **WordPress 7.0+ · PHP 7.4+ · WooCommerce 11.1+ · HTTPS · USD**
 
@@ -20,7 +20,7 @@ WordPress quyết định ngôn ngữ giao diện. Nhãn do người bán tự v
 
 Xem demo miễn phí; mua sản phẩm nhỏ sử dụng tiền thật. Đã được phát hành trên thư mục plugin WordPress.org.
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=vi_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=vi_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=vi_pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.3) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=vi_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=vi_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=vi_pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 
@@ -30,12 +30,10 @@ ZIP trên GitHub gồm tiếng Anh và mười một bản dịch. Bản WordPre
 
 [WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/)
 
-## Thanh toán bằng ví và chuyển thủ công
+## WooCommerce v0.6.3
 
-![Xem trước thanh toán bằng ví](../../wordpress-org-assets/screenshot-5.jpg)
+![Classic Checkout — USDC / Base](../../wordpress-org-assets/screenshot-5.jpg)
 
-![Xem trước chuyển thủ công](../../wordpress-org-assets/screenshot-6.jpg)
+![Mobile invoice — USDC](../../wordpress-org-assets/screenshot-6.jpg)
 
-Ảnh sử dụng dữ liệu minh họa. Địa chỉ và mã QR không dùng để thanh toán. Ví khả dụng tùy mạng và thiết bị.
-
-Ảnh được kiểm tra ngày 2026-11-16. Bộ chọn tiền và mạng dùng mã plugin v0.6.2 thực tế, chạy cục bộ với tuyến mẫu; bản demo không thể chuyển tiền.
+Screenshots: 2026-11-19, local WordPress + WooCommerce 11.1.0 + plugin v0.6.3. Synthetic orders and merchant capabilities; no production payment or blockchain transfer. Store themes control the surrounding layout.

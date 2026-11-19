@@ -4,13 +4,13 @@
 
 ![BoltUtil USDT / USDC](../../wordpress-org-assets/banner-1544x500.png)
 
-El plugin **v0.6.2** conecta WooCommerce con BoltUtil Hosted Checkout. El cliente elige una moneda y una red, y paga el importe exacto mostrado. En dispositivos y redes compatibles, una cartera conectada completa la dirección y el importe para revisarlos y confirmar. También se puede hacer una transferencia manual. Los fondos llegan a la cartera configurada por el comerciante.
+El plugin **v0.6.3** conecta WooCommerce con BoltUtil Hosted Checkout. El cliente elige una moneda y una red, y paga el importe exacto mostrado. En dispositivos y redes compatibles, una cartera conectada completa la dirección y el importe para revisarlos y confirmar. También se puede hacer una transferencia manual. Los fondos llegan a la cartera configurada por el comerciante.
 
 Seis redes: TRON, Ethereum, BNB Smart Chain, Polygon, Solana y Base. USDT está disponible en seis y USDC en cinco: once combinaciones. TRON solo admite USDT; el USDT de Base es Bridged USDT y el USDC de BNB es Binance-Peg USDC. Solo aparecen las rutas habilitadas por el servicio, la cartera del comerciante y el plugin.
 
 ## Instalación y configuración
 
-Descarga el ZIP instalable de v0.6.2 y súbelo desde Plugins de WordPress. Configura la moneda de la tienda en USD. En la misma cuenta de comerciante de BoltUtil, crea una clave API LIVE, configura las carteras receptoras y un Webhook activo; guarda las credenciales y las redes en el plugin. La actualización conserva pedidos y credenciales; USDC debe habilitarse expresamente.
+Descarga el ZIP instalable de v0.6.3 y súbelo desde Plugins de WordPress. Configura la moneda de la tienda en USD. En la misma cuenta de comerciante de BoltUtil, crea una clave API LIVE, configura las carteras receptoras y un Webhook activo; guarda las credenciales y las redes en el plugin. La actualización conserva pedidos y credenciales; USDC debe habilitarse expresamente.
 
 **WordPress 7.0+ · PHP 7.4+ · WooCommerce 11.1+ · HTTPS · USD**
 
@@ -20,7 +20,7 @@ WordPress selecciona el idioma de la interfaz. Las etiquetas escritas por el com
 
 La demo puede explorarse gratis; las compras pequeñas usan fondos reales. Disponible en el directorio de plugins de WordPress.org.
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=es_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=es_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=es_pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.3) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=es_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=es_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=es_pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 
@@ -30,12 +30,10 @@ El ZIP de GitHub incluye inglés y once traducciones. La edición de WordPress.o
 
 [WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/)
 
-## Pago con cartera y transferencia manual
+## WooCommerce v0.6.3
 
-![Vista previa del pago con cartera](../../wordpress-org-assets/screenshot-5.jpg)
+![Classic Checkout — USDC / Base](../../wordpress-org-assets/screenshot-5.jpg)
 
-![Vista previa de transferencia manual](../../wordpress-org-assets/screenshot-6.jpg)
+![Mobile invoice — USDC](../../wordpress-org-assets/screenshot-6.jpg)
 
-Las vistas del checkout usan datos de demostración. La dirección y el QR no permiten pagar. La disponibilidad de carteras depende de la red y el dispositivo.
-
-Capturas revisadas el 2026-11-16. La selección de moneda y red se renderiza localmente con el código real v0.6.2 y rutas de ejemplo; la demo de pago no permite transferir fondos.
+Screenshots: 2026-11-19, local WordPress + WooCommerce 11.1.0 + plugin v0.6.3. Synthetic orders and merchant capabilities; no production payment or blockchain transfer. Store themes control the surrounding layout.

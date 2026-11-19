@@ -514,3 +514,39 @@ msgstr "Bir ödeme ağı seçin"
 #~ msgstr ""
 #~ "Yalnızca CANLI ödemeler. Etkinleştirilmiş bir BoltUtil Ödeme API'si ve "
 #~ "etkin ödeme cüzdanları gerektirir."
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Stablecoin invoice payments"
+msgstr "Stablecoin ile fatura ödemeleri"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay your invoice"
+msgstr "Faturanızı ödeyin"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Amount to pay"
+msgstr "Ödenecek tutar"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Order"
+msgstr "Sipariş"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Choose an asset and network"
+msgstr "Varlık ve ağ seçin"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Continue to BoltUtil"
+msgstr "BoltUtil ile devam et"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Back to store"
+msgstr "Mağazaya dön"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay the exact amount on the hosted checkout, using its selected network. Confirmation is automatic after verification. Opening or returning to this page does not mark an order paid."
+msgstr "Seçilen ağı kullanarak ödeme sayfasında gösterilen tutarı tam olarak ödeyin. Doğrulamanın ardından otomatik olarak onaylanır. Bu sayfayı açmak veya sayfaya dönmek siparişi ödenmiş olarak işaretlemez."
+
+#: includes/templates/form-pay.php
+msgid "Order details"
+msgstr "Sipariş ayrıntıları"

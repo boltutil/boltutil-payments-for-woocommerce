@@ -519,3 +519,39 @@ msgstr "Выберите сеть оплаты"
 #~ msgstr ""
 #~ "Только LIVE-платежи. Требуется включенный платежный API BoltUtil и активные "
 #~ "расчетные кошельки."
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Stablecoin invoice payments"
+msgstr "Оплата счетов стейблкоинами"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay your invoice"
+msgstr "Оплатите счёт"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Amount to pay"
+msgstr "Сумма к оплате"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Order"
+msgstr "Заказ"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Choose an asset and network"
+msgstr "Выберите актив и сеть"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Continue to BoltUtil"
+msgstr "Перейти в BoltUtil"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Back to store"
+msgstr "Вернуться в магазин"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay the exact amount on the hosted checkout, using its selected network. Confirmation is automatic after verification. Opening or returning to this page does not mark an order paid."
+msgstr "Оплатите точную сумму на странице оплаты, используя выбранную сеть. Подтверждение выполняется автоматически после проверки. Открытие этой страницы или возврат на неё не отмечает заказ как оплаченный."
+
+#: includes/templates/form-pay.php
+msgid "Order details"
+msgstr "Детали заказа"

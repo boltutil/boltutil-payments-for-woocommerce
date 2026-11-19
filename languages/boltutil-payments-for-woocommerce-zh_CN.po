@@ -465,3 +465,39 @@ msgstr "选择付款网络"
 #~ "LIVE payments only. Requires an enabled BoltUtil Payment API and active "
 #~ "settlement wallets."
 #~ msgstr "仅支持 LIVE 真实支付。须启用 BoltUtil Payment API 并配置有效收款钱包。"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Stablecoin invoice payments"
+msgstr "使用稳定币支付账单"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay your invoice"
+msgstr "支付账单"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Amount to pay"
+msgstr "待付金额"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Order"
+msgstr "订单"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Choose an asset and network"
+msgstr "选择币种和网络"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Continue to BoltUtil"
+msgstr "前往 BoltUtil 收银台"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Back to store"
+msgstr "返回商店"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay the exact amount on the hosted checkout, using its selected network. Confirmation is automatic after verification. Opening or returning to this page does not mark an order paid."
+msgstr "请在收银台使用指定网络，支付页面显示的准确金额。付款核验通过后自动入账；打开或返回本页不会将订单标为已付。"
+
+#: includes/templates/form-pay.php
+msgid "Order details"
+msgstr "订单详情"

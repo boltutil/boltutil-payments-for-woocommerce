@@ -24,11 +24,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          for file in boltutil-woocommerce.php includes/*.php tests/*.php; do php -l "$file"; done
+          for file in boltutil-woocommerce.php includes/*.php includes/templates/*.php tests/*.php; do php -l "$file"; done
           php tests/webhook-fixtures.php
           php tests/reconcile-schedule-fixtures.php
           php tests/multi-asset-fixtures.php
           php tests/api-fixtures.php
+          php tests/checkout-view-fixtures.php
 
   package:
     runs-on: ubuntu-latest
@@ -47,9 +48,9 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          bash tools/build-release.sh --preview
+          bash tools/build-release.sh
           version="$(sed -n 's/^ \* Version: //p' boltutil-woocommerce.php | head -1)"
-          archive="../boltutil-payments-for-woocommerce-${version}-preview.zip"
+          archive="../boltutil-payments-for-woocommerce-${version}.zip"
           unzip -tq "$archive"
           unzip -Z1 "$archive" | grep -q '^boltutil-payments-for-woocommerce/LICENSE$'
           if unzip -Z1 "$archive" | grep -Eq '(^|/)(tests|tools|wordpress-org-assets|\.git|\.github)/'; then

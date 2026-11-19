@@ -4,13 +4,13 @@
 
 ![BoltUtil USDT / USDC](../../wordpress-org-assets/banner-1544x500.png)
 
-प्लगइन **v0.6.2** WooCommerce को BoltUtil Hosted Checkout से जोड़ता है। ग्राहक टोकन और नेटवर्क चुनकर दिखाई गई सटीक राशि का भुगतान करता है। समर्थित डिवाइस और नेटवर्क पर जुड़ा हुआ वॉलेट पता और राशि भर देता है; ग्राहक जाँचकर लेनदेन की पुष्टि करता है। मैन्युअल ट्रांसफ़र भी उपलब्ध है। धन सीधे व्यापारी के निर्धारित वॉलेट में पहुँचता है।
+प्लगइन **v0.6.3** WooCommerce को BoltUtil Hosted Checkout से जोड़ता है। ग्राहक टोकन और नेटवर्क चुनकर दिखाई गई सटीक राशि का भुगतान करता है। समर्थित डिवाइस और नेटवर्क पर जुड़ा हुआ वॉलेट पता और राशि भर देता है; ग्राहक जाँचकर लेनदेन की पुष्टि करता है। मैन्युअल ट्रांसफ़र भी उपलब्ध है। धन सीधे व्यापारी के निर्धारित वॉलेट में पहुँचता है।
 
 छह नेटवर्क: TRON, Ethereum, BNB Smart Chain, Polygon, Solana और Base। USDT छह और USDC पाँच नेटवर्क पर उपलब्ध हैं, कुल ग्यारह संयोजन। TRON केवल USDT का समर्थन करता है। Base पर USDT, Bridged USDT है और BNB पर USDC, Binance-Peg USDC है। केवल सेवा, व्यापारी के वॉलेट और प्लगइन में सक्रिय रूट दिखते हैं।
 
 ## इंस्टॉलेशन और सेटअप
 
-v0.6.2 का इंस्टॉल करने योग्य ZIP डाउनलोड करके WordPress के प्लगइन अपलोड पेज से इंस्टॉल करें। स्टोर की मुद्रा USD रखें। एक ही BoltUtil व्यापारी खाते में LIVE API Key, प्राप्तकर्ता वॉलेट और सक्रिय Webhook बनाकर प्लगइन में विवरण और नेटवर्क सहेजें। अपडेट पुराने ऑर्डर और क्रेडेंशियल सुरक्षित रखता है; USDC अलग से सक्रिय करना होगा।
+v0.6.3 का इंस्टॉल करने योग्य ZIP डाउनलोड करके WordPress के प्लगइन अपलोड पेज से इंस्टॉल करें। स्टोर की मुद्रा USD रखें। एक ही BoltUtil व्यापारी खाते में LIVE API Key, प्राप्तकर्ता वॉलेट और सक्रिय Webhook बनाकर प्लगइन में विवरण और नेटवर्क सहेजें। अपडेट पुराने ऑर्डर और क्रेडेंशियल सुरक्षित रखता है; USDC अलग से सक्रिय करना होगा।
 
 **WordPress 7.0+ · PHP 7.4+ · WooCommerce 11.1+ · HTTPS · USD**
 
@@ -20,7 +20,7 @@ v0.6.2 का इंस्टॉल करने योग्य ZIP डाउ�
 
 डेमो देखना मुफ़्त है, लेकिन छोटी खरीद में असली धन का उपयोग होता है। प्लगइन WordPress.org प्लगइन डायरेक्टरी में प्रकाशित है।
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=hi_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=hi_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=hi_pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.3) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=hi_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=hi_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=hi_pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 
@@ -30,12 +30,10 @@ GitHub ZIP में अंग्रेज़ी और ग्यारह अ�
 
 [WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/)
 
-## वॉलेट भुगतान और मैनुअल ट्रांसफ़र
+## WooCommerce v0.6.3
 
-![वॉलेट भुगतान का पूर्वावलोकन](../../wordpress-org-assets/screenshot-5.jpg)
+![Classic Checkout — USDC / Base](../../wordpress-org-assets/screenshot-5.jpg)
 
-![मैनुअल ट्रांसफ़र का पूर्वावलोकन](../../wordpress-org-assets/screenshot-6.jpg)
+![Mobile invoice — USDC](../../wordpress-org-assets/screenshot-6.jpg)
 
-चित्र डेमो डेटा का उपयोग करते हैं। दिखाए गए पते और QR कोड से भुगतान नहीं किया जा सकता। वॉलेट की उपलब्धता नेटवर्क और डिवाइस पर निर्भर करती है।
-
-स्क्रीनशॉट 2026-11-16 को जाँचे गए। मुद्रा और नेटवर्क चयन वास्तविक v0.6.2 कोड से स्थानीय रूप से नमूना रूट के साथ रेंडर हुआ है; डेमो से धन नहीं भेजा जा सकता।
+Screenshots: 2026-11-19, local WordPress + WooCommerce 11.1.0 + plugin v0.6.3. Synthetic orders and merchant capabilities; no production payment or blockchain transfer. Store themes control the surrounding layout.

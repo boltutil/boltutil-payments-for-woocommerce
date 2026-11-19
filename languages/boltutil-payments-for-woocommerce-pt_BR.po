@@ -515,3 +515,39 @@ msgstr "Escolha uma rede de pagamento"
 #~ msgstr ""
 #~ "Apenas pagamentos AO VIVO. Requer uma API de pagamento BoltUtil habilitada "
 #~ "e carteiras de liquidação ativas."
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Stablecoin invoice payments"
+msgstr "Pagamento de faturas com stablecoins"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay your invoice"
+msgstr "Pague sua fatura"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Amount to pay"
+msgstr "Valor a pagar"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Order"
+msgstr "Pedido"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Choose an asset and network"
+msgstr "Escolha um ativo e uma rede"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Continue to BoltUtil"
+msgstr "Continuar para o BoltUtil"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Back to store"
+msgstr "Voltar à loja"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay the exact amount on the hosted checkout, using its selected network. Confirmation is automatic after verification. Opening or returning to this page does not mark an order paid."
+msgstr "Pague o valor exato na página de pagamento usando a rede selecionada. A confirmação é automática após a verificação. Abrir ou retornar a esta página não marca um pedido como pago."
+
+#: includes/templates/form-pay.php
+msgid "Order details"
+msgstr "Detalhes do pedido"

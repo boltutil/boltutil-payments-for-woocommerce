@@ -4,13 +4,13 @@
 
 ![BoltUtil USDT / USDC](../../wordpress-org-assets/banner-1544x500.png)
 
-プラグイン **v0.6.2** は WooCommerce と BoltUtil Hosted Checkout を連携します。購入者は通貨とネットワークを選び、表示された正確な金額を支払います。対応する端末・ネットワークでは、接続したウォレットに送金先と金額が入力され、内容を確認して承認できます。手動送金も利用できます。資金は加盟店の受取ウォレットに直接届きます。
+プラグイン **v0.6.3** は WooCommerce と BoltUtil Hosted Checkout を連携します。購入者は通貨とネットワークを選び、表示された正確な金額を支払います。対応する端末・ネットワークでは、接続したウォレットに送金先と金額が入力され、内容を確認して承認できます。手動送金も利用できます。資金は加盟店の受取ウォレットに直接届きます。
 
 TRON、Ethereum、BNB Smart Chain、Polygon、Solana、Base の6ネットワークに対応。USDT は6、USDC は5ネットワークで、計11通りです。TRON は USDT のみ。Base の USDT は Bridged USDT、BNB の USDC は Binance-Peg USDC です。サービス・加盟店ウォレット・プラグイン設定で有効な組み合わせだけが表示されます。
 
 ## インストールと設定
 
-v0.6.2 のインストール用 ZIP を WordPress のプラグインアップロード画面から導入します。店舗通貨を USD に設定し、同じ BoltUtil 加盟店アカウントで LIVE API Key、受取ウォレット、有効な Webhook を設定して保存します。更新時に既存の注文と認証情報は保持されます。USDC は別途有効化してください。
+v0.6.3 のインストール用 ZIP を WordPress のプラグインアップロード画面から導入します。店舗通貨を USD に設定し、同じ BoltUtil 加盟店アカウントで LIVE API Key、受取ウォレット、有効な Webhook を設定して保存します。更新時に既存の注文と認証情報は保持されます。USDC は別途有効化してください。
 
 **WordPress 7.0+ · PHP 7.4+ · WooCommerce 11.1+ · HTTPS · USD**
 
@@ -20,7 +20,7 @@ v0.6.2 のインストール用 ZIP を WordPress のプラグインアップロ
 
 デモの閲覧は無料ですが、少額の購入には実際の資金を使用します。 WordPress.org のプラグインディレクトリで公開済みです。
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ja_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ja_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ja_pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.3) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ja_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ja_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ja_pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 
@@ -30,12 +30,10 @@ GitHub ZIP は英語と 11 言語の翻訳を同梱します。WordPress.org 版
 
 [WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/)
 
-## ウォレット決済と手動送金
+## WooCommerce v0.6.3
 
-![ウォレット決済のプレビュー](../../wordpress-org-assets/screenshot-5.jpg)
+![Classic Checkout — USDC / Base](../../wordpress-org-assets/screenshot-5.jpg)
 
-![手動送金のプレビュー](../../wordpress-org-assets/screenshot-6.jpg)
+![Mobile invoice — USDC](../../wordpress-org-assets/screenshot-6.jpg)
 
-画像はデモデータを使用しています。表示されたアドレスと QR コードで支払うことはできません。利用できるウォレットはネットワークと端末によって異なります。
-
-2026-11-16 に画像を確認。通貨・ネットワーク選択は v0.6.2 の実際のコードをサンプル経路でローカル描画しています。操作デモから送金はできません。
+Screenshots: 2026-11-19, local WordPress + WooCommerce 11.1.0 + plugin v0.6.3. Synthetic orders and merchant capabilities; no production payment or blockchain transfer. Store themes control the surrounding layout.

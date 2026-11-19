@@ -1,5 +1,6 @@
 <?php
 defined( 'ABSPATH' ) || exit;
+require_once __DIR__ . '/class-boltutil-wc-checkout.php';
 
 /** WooCommerce adapter; BoltUtil owns blockchain monitoring and matching. */
 class BoltUtil_WC_Gateway extends WC_Payment_Gateway {
@@ -94,11 +95,11 @@ class BoltUtil_WC_Gateway extends WC_Payment_Gateway {
 
     public static function network_icon_url( $code ) {
         $icons = array(
-            'TRC20' => 'tron.svg',
-            'ERC20' => 'ethereum.svg',
+            'TRC20' => 'tron.png',
+            'ERC20' => 'ethereum.png',
             'BEP20' => 'bnb-chain.svg',
             'POLYGON' => 'polygon.svg',
-            'SOLANA' => 'solana.svg',
+            'SOLANA' => 'solana.png',
             'BASE' => 'base.svg',
         );
         return isset( $icons[ $code ] )
@@ -114,7 +115,8 @@ class BoltUtil_WC_Gateway extends WC_Payment_Gateway {
     }
 
     public static function token_icon_url( $token = 'USDT' ) {
-        return plugins_url( 'assets/tokens/' . ( 'USDC' === $token ? 'usdc' : 'usdt' ) . '.svg', BOLTUTIL_WC_FILE );
+        $path = 'assets/tokens/' . ( 'USDC' === $token ? 'usdc' : 'usdt' ) . '.svg';
+        return add_query_arg( 'ver', self::asset_version( $path ), plugins_url( $path, BOLTUTIL_WC_FILE ) );
     }
 
     private function guide_step( $number, $title, $description, $url = '', $link_label = '' ) {
@@ -311,26 +313,7 @@ class BoltUtil_WC_Gateway extends WC_Payment_Gateway {
     }
 
     public function payment_fields() {
-        $routes = $this->available_routes();
-        echo '<div class="boltutil-payment-panel boltutil-classic-panel"><p class="boltutil-payment-description">' . esc_html( $this->checkout_description() ) . '</p>';
-        echo '<fieldset class="boltutil-token-fieldset" hidden><legend>' . esc_html( $this->guide_text( '选择支付币种', __( 'Choose a stablecoin', 'boltutil-payments-for-woocommerce' ) ) ) . '</legend><div class="boltutil-token-list">';
-        foreach ( array( 'USDT', 'USDC' ) as $token ) {
-            if ( ! in_array( $token, array_column( $routes, 'token' ), true ) ) continue;
-            echo '<label class="boltutil-token-option"><input type="radio" name="boltutil_token" value="' . esc_attr( $token ) . '" /><img src="' . esc_url( self::token_icon_url( $token ) ) . '" alt="" aria-hidden="true" /><strong>' . esc_html( $token ) . '</strong></label>';
-        }
-        echo '</div></fieldset><fieldset class="boltutil-network-fieldset"><legend>' . esc_html( $this->guide_text( '选择支付网络', __( 'Choose a payment network', 'boltutil-payments-for-woocommerce' ) ) ) . '</legend><div class="boltutil-network-list">';
-        foreach ( $routes as $route_id => $route ) {
-            $code = $route['network']; $token = $route['token'];
-            $labels = self::network_labels( $code );
-            echo '<label class="boltutil-network-option"><input type="radio" name="boltutil_route" data-token="' . esc_attr( $token ) . '" data-network="' . esc_attr( $code ) . '" value="' . esc_attr( $route_id ) . '" ' . checked( $route_id, array_key_first( $routes ), false ) . ' />';
-            echo '<span class="boltutil-network-art" aria-hidden="true"><span class="boltutil-chain-badge network-' . esc_attr( strtolower( $code ) ) . '"><img src="' . esc_url( self::network_icon_url( $code ) ) . '" alt="" loading="lazy" /></span><span class="boltutil-token-badge"><img src="' . esc_url( self::token_icon_url( $token ) ) . '" alt="" loading="lazy" /></span></span>';
-            echo '<span class="boltutil-network-copy"><strong>' . esc_html( $labels[0] ) . '</strong><small>' . esc_html( self::token_label( $token, $code ) . ' · ' . $labels[1] ) . '</small></span><span class="boltutil-network-arrow" aria-hidden="true">→</span>';
-            echo '<span class="boltutil-network-selected" aria-hidden="true">✓ ' . esc_html( $this->guide_text( '已选择', __( 'Selected', 'boltutil-payments-for-woocommerce' ) ) ) . '</span></label>';
-        }
-        echo '</div></fieldset><p class="boltutil-payment-note">' . esc_html( $this->guide_text(
-            '下单后将跳转到 BoltUtil 收银台。请按收银台显示的准确金额和地址付款；链上确认后，订单状态会自动更新。',
-            __( 'You will be redirected to BoltUtil Checkout. Pay the exact amount to the address shown there; the order updates after on-chain confirmation.', 'boltutil-payments-for-woocommerce' )
-        ) ) . '</p></div>';
+        BoltUtil_WC_Checkout::render( $this, $this->available_routes(), BoltUtil_WC_Checkout::context() );
     }
 
     public function validate_fields() {

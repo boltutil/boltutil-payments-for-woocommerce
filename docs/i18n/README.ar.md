@@ -6,13 +6,13 @@
 
 <div dir="rtl">
 
-يربط الإصدار **v0.6.2** من الإضافة WooCommerce بخدمة BoltUtil Hosted Checkout. يختار العميل العملة والشبكة ثم يدفع المبلغ الدقيق المعروض. على الأجهزة والشبكات المدعومة، تملأ المحفظة المتصلة عنوان الاستلام والمبلغ ليتم مراجعتهما وتأكيد المعاملة. يتوفر التحويل اليدوي أيضًا. تصل الأموال مباشرة إلى محفظة التاجر المحددة.
+يربط الإصدار **v0.6.3** من الإضافة WooCommerce بخدمة BoltUtil Hosted Checkout. يختار العميل العملة والشبكة ثم يدفع المبلغ الدقيق المعروض. على الأجهزة والشبكات المدعومة، تملأ المحفظة المتصلة عنوان الاستلام والمبلغ ليتم مراجعتهما وتأكيد المعاملة. يتوفر التحويل اليدوي أيضًا. تصل الأموال مباشرة إلى محفظة التاجر المحددة.
 
 ست شبكات: TRON وEthereum وBNB Smart Chain وPolygon وSolana وBase. تدعم USDT ست شبكات وUSDC خمسًا، بإجمالي إحدى عشرة توليفة. تدعم TRON عملة USDT فقط. تستخدم Base إصدار Bridged USDT، وتستخدم BNB إصدار Binance-Peg USDC. لا تظهر إلا المسارات المفعلة في الخدمة ومحافظ التاجر وإعدادات الإضافة.
 
 ## التثبيت والإعداد
 
-نزّل ملف ZIP القابل للتثبيت للإصدار v0.6.2 وارفعه من صفحة إضافات WordPress. اضبط عملة المتجر على USD. أنشئ LIVE API Key ومحافظ الاستلام وWebhook نشطًا في حساب التاجر نفسه لدى BoltUtil، ثم احفظ بيانات الاعتماد والشبكات في الإضافة. تحتفظ الترقية بالطلبات وبيانات الاعتماد، ويجب تفعيل USDC بصورة منفصلة.
+نزّل ملف ZIP القابل للتثبيت للإصدار v0.6.3 وارفعه من صفحة إضافات WordPress. اضبط عملة المتجر على USD. أنشئ LIVE API Key ومحافظ الاستلام وWebhook نشطًا في حساب التاجر نفسه لدى BoltUtil، ثم احفظ بيانات الاعتماد والشبكات في الإضافة. تحتفظ الترقية بالطلبات وبيانات الاعتماد، ويجب تفعيل USDC بصورة منفصلة.
 
 **WordPress 7.0+ · PHP 7.4+ · WooCommerce 11.1+ · HTTPS · USD**
 
@@ -24,7 +24,7 @@
 
 </div>
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ar_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ar_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ar_pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.3) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ar_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ar_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=ar_pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 
@@ -34,12 +34,10 @@
 
 [WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/)
 
-## الدفع بالمحفظة والتحويل اليدوي
+## WooCommerce v0.6.3
 
-![معاينة الدفع بالمحفظة](../../wordpress-org-assets/screenshot-5.jpg)
+![Classic Checkout — USDC / Base](../../wordpress-org-assets/screenshot-5.jpg)
 
-![معاينة التحويل اليدوي](../../wordpress-org-assets/screenshot-6.jpg)
+![Mobile invoice — USDC](../../wordpress-org-assets/screenshot-6.jpg)
 
-تستخدم الصور بيانات توضيحية. لا يمكن الدفع باستخدام العنوان أو رمز QR المعروض. يعتمد توفر المحافظ على الشبكة والجهاز.
-
-تمت مراجعة الصور في 2026-11-16. عُرض اختيار العملة والشبكة محلياً باستخدام الكود الفعلي للإصدار v0.6.2 ومسارات تجريبية؛ لا يمكن إرسال أموال من العرض.
+Screenshots: 2026-11-19, local WordPress + WooCommerce 11.1.0 + plugin v0.6.3. Synthetic orders and merchant capabilities; no production payment or blockchain transfer. Store themes control the surrounding layout.

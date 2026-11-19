@@ -1,0 +1,13 @@
+{
+  "usdt.svg": {
+    "source": "https://tether.to/images/logoCircle.svg",
+    "guidelines": "https://tether.to/en/media/",
+    "retrieved_on": "2026-10-07",
+    "sha256": "7c9f13b068996186c4df0f3dcdeeeb86e11cee6d8a9e7597cec19ccee164d7c5",
+    "modification": "none"
+  },
+  "usdc.svg": {
+    "source": "copied from existing public/assets/tokens/usdc.svg",
+    "modification": "none"
+  }
+}

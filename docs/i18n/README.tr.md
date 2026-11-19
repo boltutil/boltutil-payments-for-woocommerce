@@ -4,13 +4,13 @@
 
 ![BoltUtil USDT / USDC](../../wordpress-org-assets/banner-1544x500.png)
 
-**v0.6.2** eklentisi WooCommerce mağazanızı BoltUtil Hosted Checkout ile bağlar. Müşteri token ve ağ seçip gösterilen kesin tutarı öder. Desteklenen cihaz ve ağlarda bağlı cüzdan adresi ve tutarı doldurur; müşteri kontrol edip işlemi onaylar. Manuel transfer de kullanılabilir. Para satıcının tanımlı cüzdanına gider.
+**v0.6.3** eklentisi WooCommerce mağazanızı BoltUtil Hosted Checkout ile bağlar. Müşteri token ve ağ seçip gösterilen kesin tutarı öder. Desteklenen cihaz ve ağlarda bağlı cüzdan adresi ve tutarı doldurur; müşteri kontrol edip işlemi onaylar. Manuel transfer de kullanılabilir. Para satıcının tanımlı cüzdanına gider.
 
 Altı ağ: TRON, Ethereum, BNB Smart Chain, Polygon, Solana ve Base. USDT altı, USDC beş ağda desteklenir: toplam on bir kombinasyon. TRON yalnızca USDT destekler; Base USDT, Bridged USDT; BNB USDC ise Binance-Peg USDC sürümüdür. Servis, satıcı cüzdanı ve eklenti ayarlarında etkin rotalar gösterilir.
 
 ## Kurulum ve yapılandırma
 
-v0.6.2 kurulum ZIP dosyasını indirip WordPress eklenti yükleme sayfasında yükleyin. Mağaza para birimini USD yapın. Aynı BoltUtil satıcı hesabında LIVE API Key, alıcı cüzdanlar ve etkin Webhook oluşturup eklentide kaydedin. Güncelleme siparişleri ve kimlik bilgilerini korur; USDC ayrıca etkinleştirilir.
+v0.6.3 kurulum ZIP dosyasını indirip WordPress eklenti yükleme sayfasında yükleyin. Mağaza para birimini USD yapın. Aynı BoltUtil satıcı hesabında LIVE API Key, alıcı cüzdanlar ve etkin Webhook oluşturup eklentide kaydedin. Güncelleme siparişleri ve kimlik bilgilerini korur; USDC ayrıca etkinleştirilir.
 
 **WordPress 7.0+ · PHP 7.4+ · WooCommerce 11.1+ · HTTPS · USD**
 
@@ -20,7 +20,7 @@ Arayüz dili WordPress tarafından belirlenir. Satıcının özel metinleri otom
 
 Demo ücretsiz gezilebilir; küçük satın alımlar gerçek para kullanır. WordPress.org eklenti dizininde yayımlandı.
 
-[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.2) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=tr_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=tr_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=tr_pricing)
+[Install from WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/) · [GitHub ZIP](https://github.com/boltutil/boltutil-payments-for-woocommerce/releases/tag/v0.6.3) · [Live demo](https://shop-test.boltutil.com/?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=tr_website) · [Integration guide](https://boltutil.com/woocommerce?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=tr_woocommerce) · [Pricing](https://boltutil.com/pricing?utm_source=github&utm_medium=referral&utm_campaign=woocommerce_plugin&utm_content=tr_pricing)
 
 [Full setup and payment contract](../../README.md#configure-in-five-steps) · [Language guide](../I18N.md) · [Security](../../SECURITY.md)
 
@@ -30,12 +30,10 @@ GitHub ZIP dosyası İngilizce ve on bir çeviri içerir. WordPress.org sürüm�
 
 [WordPress.org](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/)
 
-## Cüzdan ödemesi ve manuel transfer
+## WooCommerce v0.6.3
 
-![Cüzdan ödemesi önizlemesi](../../wordpress-org-assets/screenshot-5.jpg)
+![Classic Checkout — USDC / Base](../../wordpress-org-assets/screenshot-5.jpg)
 
-![Manuel transfer önizlemesi](../../wordpress-org-assets/screenshot-6.jpg)
+![Mobile invoice — USDC](../../wordpress-org-assets/screenshot-6.jpg)
 
-Görseller demo verileri kullanır. Adres ve QR kod ödeme için kullanılamaz. Cüzdan kullanılabilirliği ağa ve cihaza bağlıdır.
-
-Ekran görüntüleri 2026-11-16 tarihinde kontrol edildi. Para ve ağ seçimi gerçek v0.6.2 koduyla örnek rotalar kullanılarak yerel olarak oluşturuldu; demo para transferi yapmaz.
+Screenshots: 2026-11-19, local WordPress + WooCommerce 11.1.0 + plugin v0.6.3. Synthetic orders and merchant capabilities; no production payment or blockchain transfer. Store themes control the surrounding layout.

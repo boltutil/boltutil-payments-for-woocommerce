@@ -5,7 +5,7 @@ Requires at least: 7.0
 Tested up to: 7.1
 Requires PHP: 7.4
 Requires Plugins: woocommerce
-Stable tag: 0.6.2
+Stable tag: 0.6.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,14 +71,21 @@ Use https://github.com/boltutil/boltutil-payments-for-woocommerce/issues for plu
 
 == Screenshots ==
 
-1. Actual v0.6.2 gateway renderer with sample merchant routes: USDT and six networks; surrounding checkout layout depends on the theme.
-2. Actual v0.6.2 gateway renderer with sample merchant routes: USDC and five networks, including native USDC on Base.
-3. WooCommerce merchant setup guide and daily free allowance information; no secret credential inputs are shown.
-4. Public BoltUtil Studio demonstration shop. Browsing and the interactive preview are free; submitted purchases use real funds.
-5. Interactive wallet-payment preview with Ethereum USDT and nine wallet options. Illustrative data; cannot send funds.
-6. Interactive manual-transfer preview with exact amount and a demonstration QR code. The address and QR code cannot be used to pay.
+1. Version 0.6.3 running in local WooCommerce: invoice payment with USDT and six enabled networks. Synthetic order; no real funds.
+2. The same invoice with USDC and five networks, including native USDC on Base.
+3. Merchant setup guide in WooCommerce. No credential inputs or customer data are shown.
+4. Checkout Blocks using the unified BoltUtil payment card with USDC selected.
+5. Classic checkout with USDC and Base selected; native WooCommerce billing and order review remain available.
+6. Mobile invoice payment at 375px, using the same card, original icons and asset switch.
 
 == Changelog ==
+
+= 0.6.3 =
+* Unify invoice payment, Classic Checkout and Checkout Blocks with the BoltUtil checkout card, typography, controls and original project image assets.
+* Add a native order-payment layout when BoltUtil is the only available gateway, preserving order permissions, terms, nonce and submit hooks.
+* Require an explicit network choice after changing assets, while retaining valid same-asset choices through classic checkout refreshes.
+* Load checkout styles on pages containing Checkout Blocks, including non-default checkout URLs.
+* Update all eleven bundled translations, GitHub documentation and actual local WooCommerce screenshots.
 
 = 0.6.2 =
 * Align checkout brand, stablecoin and network badges in Classic Checkout and Checkout Blocks, including narrow screens and RTL layouts.

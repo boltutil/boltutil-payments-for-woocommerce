@@ -1,37 +1,13 @@
-BoltUtil Payments for WooCommerce asset notice
+BoltUtil Payments for WooCommerce — asset licence notice
 
-assets/boltutil-official-mark.svg is the BoltUtil brand mark. Copyright
-BoltUtil. This copy is distributed under GPLv2 or later, as is the plugin.
+BoltUtil source code, checkout styling and lightning brand artwork are
+licensed under GPL-2.0-or-later. See LICENSE.
 
-The following SVG artwork comes from spothq/cryptocurrency-icons, commit
-1a63530be6e374711a8554f31b17e4cb92c25fa5. Its icon collection is released
-under CC0 1.0 Universal. The complete license is included in
-CRYPTO-ICONS-CC0-LICENSE.txt. Source:
-https://github.com/spothq/cryptocurrency-icons/tree/1a63530be6e374711a8554f31b17e4cb92c25fa5/svg/color
+Token and network artwork identifies supported payment routes. Rights in
+Tether/USDT, Circle/USDC, TRON, Ethereum, BNB Chain, Polygon, Solana and Base
+marks remain with their respective owners. The publisher has confirmed
+permission for public redistribution with this GPL-compatible plugin.
+Use of these marks does not imply endorsement or partnership.
 
-  assets/chains/tron.svg       svg/color/trx.svg
-  assets/chains/ethereum.svg   svg/color/eth.svg
-  assets/chains/solana.svg     svg/color/sol.svg
-  assets/chains/bnb-chain.svg  svg/color/bnb.svg
-  assets/chains/polygon.svg    svg/color/matic.svg
-  assets/tokens/usdt.svg       svg/color/usdt.svg
-  assets/tokens/usdc.svg       svg/color/usdc.svg
-
-Local adaptations: Solana uses a black circular backing and green-to-purple
-bars; Ethereum uses a neutral backing and dark facets. BNB Chain and Polygon
-artwork is copied unchanged from that pinned CC0 source.
-
-assets/chains/base.svg is a locally authored SVG document rendering the simple
-geometric blue-square identifier for Base, distributed under GPLv2 or later.
-It replaces the earlier generic network illustration. The shape/color reference
-is https://brand.base.org/core-identifiers; no third-party brand-kit file is
-bundled. The Base name and mark remain trademarks of their respective owners.
-
-Network and token names and trademarks remain with their respective owners.
-These illustrations identify available payment routes and do not imply
-partnership, sponsorship or endorsement. CC0 covers the upstream artwork's
-copyright claims, not third-party trademark rights.
-
-Exact source paths, license classifications and SHA-256 checksums for bundled
-SVGs are recorded in assets/chains/sources.json. Official Polygon, BNB Chain
-and Base brand-kit artwork from earlier releases is not bundled.
+Detailed source and file-integrity records are maintained in the source
+repository's development documentation, outside the installable package.

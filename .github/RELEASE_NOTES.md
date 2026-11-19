@@ -1,25 +1,26 @@
-# v0.6.2 — checkout alignment and network ordering
+# v0.6.3 — Unified BoltUtil checkout
 
-## Changes
+## English
 
-- Align the BoltUtil mark, stablecoin icons and network badges in Classic Checkout and Checkout Blocks; preserve alignment on narrow and RTL screens.
-- Replace the generic Base drawing with a documented, locally rendered blue-square identifier.
-- Sort networks by the service-provided numeric network ID. Older services use the original catalog order: TRON, Ethereum, BNB Smart Chain, Polygon, Solana and Base.
-- Version checkout CSS and network artwork by content hash so corrected assets refresh after reinstalling.
-- Keep merchant settings, credentials, existing orders, precise amounts, signature verification and payment completion behavior unchanged.
+The invoice payment page, Classic Checkout and Checkout Blocks now share BoltUtil Hosted Checkout's light card, dark header, typography, original token/network icons and USDT/USDC switch.
 
-The companion BoltUtil backend adds `networkId` to capabilities and returns routes in network-ID order. This is an additive response change and requires no database migration. Existing backend versions remain supported through the catalog-order fallback.
+- Show a dedicated invoice card when BoltUtil is the only available payment gateway; retain other WooCommerce payment options when present.
+- Clear the network choice when changing stablecoin, and preserve a valid same-coin selection through classic checkout recalculation.
+- Load styles for Checkout Blocks outside the default checkout URL.
+- Preserve native order permissions, terms, nonce, submit hooks and verified payment completion.
+- Use the authorised invoice balance when other payment gateways remain available.
+- Refresh the English and eleven translated introductions, runtime translations and six actual local WooCommerce screenshots.
 
-## Installation and compatibility
+Requirements: WordPress 7.0+, PHP 7.4+, WooCommerce 11.1+, HTTPS, USD store currency and a configured BoltUtil merchant account. Six networks and eleven USDT/USDC combinations are available subject to the merchant's enabled routes. BoltUtil service and blockchain fees are separate.
 
-Install `boltutil-payments-for-woocommerce-0.6.2.zip` through WordPress Plugins → Add New → Upload Plugin, or update through the [WordPress.org directory](https://wordpress.org/plugins/boltutil-payments-for-woocommerce/). Check the GitHub download against `SHA256SUMS.txt`.
+Validation: PHP 7.4/8.3 syntax and isolated payment/API/view fixtures, JavaScript route/Blocks/classic-refresh fixtures, translation and distribution checks, plus local WooCommerce 11.1.0 desktop/mobile interactions. No production payment or blockchain transfer was performed.
 
-WordPress 7.0+, WooCommerce 11.1+, PHP 7.4+, HTTPS, USD store currency and a configured BoltUtil merchant account are required. Supported routes still depend on enabled service assets and receiving wallets. The GitHub ZIP includes bundled translations; the directory edition uses WordPress language packs.
-
-## Validation
-
-Classic and Blocks selection fixtures cover all eleven supported routes. Isolated PHP, API, Webhook and retry fixtures passed. Local browser checks covered 1440px, 375px and 320px, with coin switching and RTL checks. The backend query was tested using isolated H2 data. These checks do not represent a real-money payment acceptance test.
+Install the versioned ZIP using WordPress → Plugins → Add New → Upload Plugin. Check SHA256SUMS.txt. GitHub's automatic source archives are not the install package.
 
 ## 简体中文
 
-修复结账页品牌、币种和网络图标的对齐，更新 Base 蓝色方块标识，网络按服务端数字 ID 排序，并为旧后端保留原目录顺序。样式与图标增加内容版本，避免覆盖安装后继续使用旧缓存。原有商户配置、订单、金额、验签及付款确认逻辑保持兼容，无需数据库迁移。
+v0.6.3 统一账单付款页、经典结账和 Checkout Blocks 的卡片、字体、按钮、原始图标及 USDT／USDC 切换。切换币种后重新选择网络，经典结账重新计算时保留有效的同币种选择，并修复非默认 Blocks 地址未加载样式的问题。
+
+WooCommerce 原生订单权限、条款、nonce、提交钩子和付款核验流程继续生效。更新十一种翻译及真实本地 WooCommerce 截图。插件要求 USD 商店和 BoltUtil 商户账号，服务费与链上费用另计。
+
+通过 PHP 7.4／8.3 隔离回归、JavaScript、翻译、安装包和本地桌面／手机检查；没有进行生产付款或链上转账测试。

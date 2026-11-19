@@ -482,3 +482,39 @@ msgstr "결제 네트워크 선택"
 #~ "LIVE payments only. Requires an enabled BoltUtil Payment API and active "
 #~ "settlement wallets."
 #~ msgstr "LIVE 결제만 가능합니다. 활성화된 BoltUtil 결제 API와 활성화된 결제 지갑이 필요합니다."
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Stablecoin invoice payments"
+msgstr "스테이블코인 청구서 결제"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay your invoice"
+msgstr "청구서 결제"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Amount to pay"
+msgstr "결제 금액"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Order"
+msgstr "주문"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Choose an asset and network"
+msgstr "자산과 네트워크 선택"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Continue to BoltUtil"
+msgstr "BoltUtil로 이동"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Back to store"
+msgstr "스토어로 돌아가기"
+
+#: includes/class-boltutil-wc-checkout.php includes/templates/payment-card.php
+msgid "Pay the exact amount on the hosted checkout, using its selected network. Confirmation is automatic after verification. Opening or returning to this page does not mark an order paid."
+msgstr "선택된 네트워크를 사용하여 결제 페이지에 표시된 정확한 금액을 지불하세요. 검증 후 자동으로 확인됩니다. 이 페이지를 열거나 돌아오는 것만으로 주문이 결제 완료 처리되지는 않습니다."
+
+#: includes/templates/form-pay.php
+msgid "Order details"
+msgstr "주문 상세 정보"

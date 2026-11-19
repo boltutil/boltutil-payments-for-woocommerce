@@ -1,0 +1,16 @@
+{
+  "confirmedBy": "BoltUtil publisher",
+  "confirmedOn": "2026-11-19",
+  "scope": "Public redistribution in the GPL-compatible WooCommerce plugin on GitHub and WordPress.org",
+  "basis": "Publisher explicitly confirmed permission for the original token and network images before publication.",
+  "assets": {
+    "assets/chains/tron.png": "53830c1f0b3c7654c7caa55df858d2967b7e55194d207162bf7cf9371323a1c6",
+    "assets/chains/ethereum.png": "c253d7c5d4203783e31bde1d33e143f6a9ce1defac24ab5e06948847696b80a1",
+    "assets/chains/bnb-chain.svg": "b8ff1ce0b5af2e2d9bcf5ec89fedd5224079f4f7267e306e23e8d691024f5eff",
+    "assets/chains/polygon.svg": "0c061db0ab5934201d6b90a751d497a5bb5d47e4408e77f877071efbbb94068d",
+    "assets/chains/solana.png": "b0fb83e48d1b455333436ae158cd9e547b7493ef4f5b2d5de3d678e93a994d4c",
+    "assets/chains/base.svg": "b4f2b487011713f98481cc53c4ce095629b4876acbdbc2f0f3ad69a9688ba82e",
+    "assets/tokens/usdt.svg": "7c9f13b068996186c4df0f3dcdeeeb86e11cee6d8a9e7597cec19ccee164d7c5",
+    "assets/tokens/usdc.svg": "7281e8cadfe9abc14e98b15b05cdc24cc24d68533a51e746141d4d98f2ca2bc8"
+  }
+}
